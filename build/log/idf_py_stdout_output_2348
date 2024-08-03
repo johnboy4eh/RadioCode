@@ -1,0 +1,1820 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7080
+load:0x40078000,len:15584
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar 30 2024 20:43:18[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.0[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2d2fch (185084) map[0m
+[0;32mI (171) esp_image: segment 1: paddr=0003d324 vaddr=3ffbdb60 size=02cf4h ( 11508) load[0m
+[0;32mI (176) esp_image: segment 2: paddr=00040020 vaddr=400d0020 size=acb54h (707412) map[0m
+[0;32mI (432) esp_image: segment 3: paddr=000ecb7c vaddr=3ffc0854 size=01c90h (  7312) load[0m
+[0;32mI (435) esp_image: segment 4: paddr=000ee814 vaddr=40080000 size=19904h (104708) load[0m
+[0;32mI (494) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (494) boot: Disabling RNG early entropy source...[0m
+[0;32mI (506) cpu_start: Multicore app[0m
+[0;32mI (506) cpu_start: Pro cpu up.[0m
+[0;32mI (506) cpu_start: Starting app cpu, entry point is 0x400814bc[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (526) cpu_start: Pro cpu start user code[0m
+[0;32mI (526) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (527) cpu_start: Application information:[0m
+[0;32mI (531) cpu_start: Project name:     a2dp_sink[0m
+[0;32mI (536) cpu_start: App version:      0449d05-dirty[0m
+[0;32mI (542) cpu_start: Compile time:     Mar 30 2024 20:42:50[0m
+[0;32mI (548) cpu_start: ELF file SHA256:  8b0ecee52fe3d25a...[0m
+[0;32mI (554) cpu_start: ESP-IDF:          v5.1.2[0m
+[0;32mI (559) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (563) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (568) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (573) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (580) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (586) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (592) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (599) heap_init: At 3FFCBFA0 len 00014060 (80 KiB): DRAM[0m
+[0;32mI (605) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (611) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (617) heap_init: At 40099904 len 000066FC (25 KiB): IRAM[0m
+[0;32mI (625) spi_flash: detected chip: generic[0m
+[0;32mI (628) spi_flash: flash io: dio[0m
+[0;33mW (632) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (646) coexist: coex firmware version: b6d5e8c[0m
+[0;32mI (651) app_start: Starting scheduler on CPU0[0m
+[0;32m[0;32mI (656) app_start: Starting scheduler on CPU1[0m
+I (656) main_task: Started on CPU0[0m
+[0;32mI (666) main_task: Calling app_main()[0m
+[0;32mI (686) BTDM_INIT: BT controller compile version [ec4ac65][0m
+[0;32mI (686) BTDM_INIT: Bluetooth MAC: c4:de:e2:c0:13:2a[0m
+[0;32mI (686) phy_init: phy_version 4780,16b31a7,Sep 22 2023,20:42:16[0m
+[0;33mW (1346) BT_BTC: A2DP Enable with AVRC[0m
+[0;32mI (1366) BT_AV: A2DP PROF STATE: Init Complete[0m
+[0;32mI (1366) BT_AV: event: 10[0m
+[0;32mI (1376) BT_AV: event: 10[0m
+[0;32mI (1376) BT_AV: event: 10[0m
+[0;32mI (1376) BT_AV: event: 10[0m
+[0;32mI (1376) BT_AV: Get delay report value: delay_value: 1200 * 1/10 ms[0m
+[0;32mI (1376) main_task: Returned from app_main()[0m
+[0;32mI (1386) BT_AV: Set delay report value: success, delay_value: 1250 * 1/10 ms[0m
+[0;33mW (77056) BT_HCI: hcif conn complete: hdl 0x80, st 0x0[0m
+[0;32mI (77066) BT_AV: ESP_BT_GAP_ACL_CONN_CMPL_STAT_EVT Connected to [d4:3a:2c:75:c7:0b], status: 0x100[0m
+[0;33mW (77086) BT_HCI: hcif link supv_to changed: hdl 0x80, supv_to 8000[0m
+[0;31mE (77206) BT_APPL: bta_av_rc_create ACP handle exist for shdl:0[0m
+[0;32mI (77216) BT_AV: A2DP connection state: Connecting, [d4:3a:2c:75:c7:0b][0m
+[0;32mI (77236) BT_AV: A2DP audio stream configuration, codec type: 0[0m
+[0;32mI (77236) BT_AV: Configure audio player: 21-15-2-35[0m
+[0;32mI (77236) BT_AV: Audio player configured, sample rate: 44100[0m
+[0;32mI (77246) BT_AV: protocol service capabilities configured: 0x1 [0m
+[0;32mI (77256) BT_AV: Peer device support delay reporting[0m
+[0;33mW (77266) BT_APPL: new conn_srvc id:19, app_id:0[0m
+[0;33mW (77266) BT_APPL: bta_dm_pm_ssr conn_srvc id:19, app_id:0[0m
+[0;33mW (77266) BT_APPL: bta_dm_pm_ssr:2, lat:1200[0m
+[0;32mI (77276) BT_AV: A2DP connection state: Connected, [d4:3a:2c:75:c7:0b][0m
+[0;32mI (77286) BT_APP_CORE: ringbuffer data empty! mode changed: RINGBUFFER_MODE_PREFETCHING[0m
+[0;32mI (77356) RC_CT: AVRC conn_state event: state 1, [d4:3a:2c:75:c7:0b][0m
+[0;32mI (77356) RC_TG: AVRC conn_state evt: state 1, [d4:3a:2c:75:c7:0b][0m
+[0;32mI (77356) RC_CT: AVRC remote features 25b, TG features c1[0m
+[0;32mI (77366) RC_TG: AVRC remote features: 25b, CT features: 2[0m
+[0;32mI (77526) RC_CT: remote rn_cap: count 8, bitmask 0x1f26[0m
+[0;32mI (77606) RC_CT: AVRC metadata rsp: attribute id 0x1, Strength Vs Size: The Optimal Training Comparison Ft. Mike Israetel[0m
+[0;32mI (77606) RC_CT: AVRC metadata rsp: attribute id 0x2, Mitchell Hooper[0m
+[0;32mI (77606) RC_CT: AVRC metadata rsp: attribute id 0x4, Mitchell Hooper[0m
+[0;32mI (77646) RC_TG: AVRC register event notification: 13, param: 0x0[0m
+[0;32mI (77666) RC_TG: AVRC set absolute volume: 51%[0m
+[0;32mI (77666) RC_TG: Volume is set by remote controller to: 51%[0m
+[0;33mW (80476) BT_HCI: hci cmd send: sniff: hdl 0x80, intv(400 800)[0m
+[0;33mW (80486) BT_HCI: hcif mode change: hdl 0x80, mode 2, intv 800, status 0x0[0m
+[0;32mI (80496) BT_AV: ESP_BT_GAP_MODE_CHG_EVT mode: 2[0m
+[0;33mW (82756) BT_HCI: hcif ssr evt: st 0x0, hdl 0x80, tx_lat 800 rx_lat 800[0m
+[0;32mI (82756) RC_TG: AVRC set absolute volume: 55%[0m
+[0;32mI (82756) RC_TG: Volume is set by remote controller to: 55%[0m
+[0;33mW (96256) BT_HCI: hcif mode change: hdl 0x80, mode 0, intv 0, status 0x0[0m
+[0;32mI (96256) BT_AV: ESP_BT_GAP_MODE_CHG_EVT mode: 0[0m
+[0;32mI (96266) BT_LOG: bta_av_link_role_ok hndl:x41 role:1 conn_audio:x1 bits:1 features:x864b
+[0m
+[0;33mW (96266) BT_APPL: new conn_srvc id:19, app_id:1[0m
+[0;32mI (96276) RC_CT: AVRC event notification: 1[0m
+[0;32mI (96276) BT_AV: Playback status changed: 0x1[0m
+[0;32mI (96276) BT_AV: A2DP audio state: Started[0m
+[0;32mI (96286) RC_CT: AVRC event notification: 2[0m
+[0;32mI (96286) RC_CT: AVRC event notification: 5[0m
+[0;32mI (96296) BT_AV: Play position changed: 61-ms[0m
+[0;32mI (96346) RC_CT: AVRC metadata rsp: attribute id 0x1, Like That[0m
+[0;32mI (96346) RC_CT: AVRC metadata rsp: attribute id 0x2, Future, Metro Boomin, Kendrick Lamar[0m
+[0;32mI (96346) RC_CT: AVRC metadata rsp: attribute id 0x4, WE DON'T TRUST YOU[0m
+[0;32mI (96556) BT_APP_CORE: ringbuffer data increased! mode changed: RINGBUFFER_MODE_PROCESSING[0m
+[0;33mW (96586) BT_APP_CORE: ringbuffer overflowed, ready to decrease data! mode changed: RINGBUFFER_MODE_DROPPING[0m
+[0;33mW (96596) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (96616) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (96646) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;32mI (96646) BT_APP_CORE: ringbuffer data decreased! mode changed: RINGBUFFER_MODE_PROCESSING[0m
+[0;32mI (98636) BT_AV: Audio packet count: 100[0m
+[0;32mI (100956) BT_AV: Audio packet count: 200[0m
+[0;32mI (103276) BT_AV: Audio packet count: 300[0m
+[0;32mI (103496) RC_CT: AVRC event notification: 5[0m
+[0;32mI (103496) BT_AV: Play position changed: 7269-ms[0m
+[0;32mI (105346) BT_APP_CORE: ringbuffer underflowed! mode changed: RINGBUFFER_MODE_PREFETCHING[0m
+[0;32mI (105836) BT_APP_CORE: ringbuffer data increased! mode changed: RINGBUFFER_MODE_PROCESSING[0m
+[0;32mI (106076) BT_AV: Audio packet count: 400[0m
+[0;33mW (106146) BT_APP_CORE: ringbuffer overflowed, ready to decrease data! mode changed: RINGBUFFER_MODE_DROPPING[0m
+[0;33mW (106156) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (106166) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (106166) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (106176) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (106176) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (106186) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (106196) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (106206) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;32mI (106206) BT_APP_CORE: ringbuffer data decreased! mode changed: RINGBUFFER_MODE_PROCESSING[0m
+[0;33mW (106346) BT_APP_CORE: ringbuffer overflowed, ready to decrease data! mode changed: RINGBUFFER_MODE_DROPPING[0m
+[0;33mW (106346) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (106376) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (106386) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (106386) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;32mI (106396) BT_APP_CORE: ringbuffer data decreased! mode changed: RINGBUFFER_MODE_PROCESSING[0m
+[0;33mW (106616) BT_APP_CORE: ringbuffer overflowed, ready to decrease data! mode changed: RINGBUFFER_MODE_DROPPING[0m
+[0;33mW (106636) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (106666) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;32mI (106666) BT_APP_CORE: ringbuffer data decreased! mode changed: RINGBUFFER_MODE_PROCESSING[0m
+[0;32mI (107316) BT_APP_CORE: ringbuffer underflowed! mode changed: RINGBUFFER_MODE_PREFETCHING[0m
+[0;32mI (107686) BT_APP_CORE: ringbuffer data increased! mode changed: RINGBUFFER_MODE_PROCESSING[0m
+[0;33mW (107806) BT_APP_CORE: ringbuffer overflowed, ready to decrease data! mode changed: RINGBUFFER_MODE_DROPPING[0m
+[0;33mW (107816) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (107836) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (107846) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (107856) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;32mI (107856) BT_APP_CORE: ringbuffer data decreased! mode changed: RINGBUFFER_MODE_PROCESSING[0m
+[0;33mW (107936) BT_APP_CORE: ringbuffer overflowed, ready to decrease data! mode changed: RINGBUFFER_MODE_DROPPING[0m
+[0;33mW (107946) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (107956) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (107976) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (107986) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (108006) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;32mI (108006) BT_APP_CORE: ringbuffer data decreased! mode changed: RINGBUFFER_MODE_PROCESSING[0m
+[0;32mI (108126) BT_AV: Audio packet count: 500[0m
+[0;33mW (108806) BT_APP_CORE: ringbuffer overflowed, ready to decrease data! mode changed: RINGBUFFER_MODE_DROPPING[0m
+[0;33mW (108816) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (108826) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (108826) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (108876) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;32mI (108876) BT_APP_CORE: ringbuffer data decreased! mode changed: RINGBUFFER_MODE_PROCESSING[0m
+[0;33mW (108926) BT_APP_CORE: ringbuffer overflowed, ready to decrease data! mode changed: RINGBUFFER_MODE_DROPPING[0m
+[0;33mW (108946) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (108966) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (108996) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;32mI (108996) BT_APP_CORE: ringbuffer data decreased! mode changed: RINGBUFFER_MODE_PROCESSING[0m
+[0;32mI (110246) BT_AV: Audio packet count: 600[0m
+[0;32mI (111826) BT_APP_CORE: ringbuffer underflowed! mode changed: RINGBUFFER_MODE_PREFETCHING[0m
+[0;32mI (112066) BT_APP_CORE: ringbuffer data increased! mode changed: RINGBUFFER_MODE_PROCESSING[0m
+[0;33mW (112126) BT_APP_CORE: ringbuffer overflowed, ready to decrease data! mode changed: RINGBUFFER_MODE_DROPPING[0m
+[0;33mW (112136) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (112136) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (112146) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (112156) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (112176) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;32mI (112176) BT_APP_CORE: ringbuffer data decreased! mode changed: RINGBUFFER_MODE_PROCESSING[0m
+[0;33mW (112226) BT_APP_CORE: ringbuffer overflowed, ready to decrease data! mode changed: RINGBUFFER_MODE_DROPPING[0m
+[0;33mW (112236) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (112266) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (112296) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;32mI (112296) BT_APP_CORE: ringbuffer data decreased! mode changed: RINGBUFFER_MODE_PROCESSING[0m
+[0;32mI (112576) BT_AV: Audio packet count: 700[0m
+[0;32mI (113606) RC_CT: AVRC event notification: 5[0m
+[0;32mI (113606) BT_AV: Play position changed: 17336-ms[0m
+[0;32mI (114886) BT_AV: Audio packet count: 800[0m
+[0;32mI (117206) BT_AV: Audio packet count: 900[0m
+[0;32mI (119526) BT_AV: Audio packet count: 1000[0m
+[0;32mI (121866) BT_AV: Audio packet count: 1100[0m
+[0;32mI (123676) RC_CT: AVRC event notification: 5[0m
+[0;32mI (123676) BT_AV: Play position changed: 27457-ms[0m
+[0;32mI (124166) BT_AV: Audio packet count: 1200[0m
+[0;32mI (126496) BT_AV: Audio packet count: 1300[0m
+[0;32mI (128106) BT_APP_CORE: ringbuffer underflowed! mode changed: RINGBUFFER_MODE_PREFETCHING[0m
+[0;32mI (128406) BT_APP_CORE: ringbuffer data increased! mode changed: RINGBUFFER_MODE_PROCESSING[0m
+[0;33mW (128496) BT_APP_CORE: ringbuffer overflowed, ready to decrease data! mode changed: RINGBUFFER_MODE_DROPPING[0m
+[0;33mW (128516) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (128566) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;32mI (128566) BT_APP_CORE: ringbuffer data decreased! mode changed: RINGBUFFER_MODE_PROCESSING[0m
+[0;33mW (128666) BT_APP_CORE: ringbuffer overflowed, ready to decrease data! mode changed: RINGBUFFER_MODE_DROPPING[0m
+[0;33mW (128676) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (128686) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (128696) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (128706) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (128746) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;32mI (128746) BT_APP_CORE: ringbuffer data decreased! mode changed: RINGBUFFER_MODE_PROCESSING[0m
+[0;32mI (128916) BT_AV: Audio packet count: 1400[0m
+[0;33mW (129066) BT_APP_CORE: ringbuffer overflowed, ready to decrease data! mode changed: RINGBUFFER_MODE_DROPPING[0m
+[0;33mW (129106) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (129106) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;32mI (129106) BT_APP_CORE: ringbuffer data decreased! mode changed: RINGBUFFER_MODE_PROCESSING[0m
+[0;32mI (131166) BT_AV: Audio packet count: 1500[0m
+[0;32mI (133466) BT_AV: Audio packet count: 1600[0m
+[0;32mI (133776) RC_CT: AVRC event notification: 5[0m
+[0;32mI (133776) BT_AV: Play position changed: 37539-ms[0m
+[0;32mI (135786) BT_AV: Audio packet count: 1700[0m
+[0;32mI (138176) BT_AV: Audio packet count: 1800[0m
+[0;32mI (138426) BT_APP_CORE: ringbuffer underflowed! mode changed: RINGBUFFER_MODE_PREFETCHING[0m
+[0;32mI (138566) BT_APP_CORE: ringbuffer data increased! mode changed: RINGBUFFER_MODE_PROCESSING[0m
+[0;33mW (138676) BT_APP_CORE: ringbuffer overflowed, ready to decrease data! mode changed: RINGBUFFER_MODE_DROPPING[0m
+[0;33mW (138696) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (138706) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (138726) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;32mI (138726) BT_APP_CORE: ringbuffer data decreased! mode changed: RINGBUFFER_MODE_PROCESSING[0m
+[0;32mI (140416) BT_AV: Audio packet count: 1900[0m
+[0;32mI (142736) BT_AV: Audio packet count: 2000[0m
+[0;32mI (143886) RC_CT: AVRC event notification: 5[0m
+[0;32mI (143886) BT_AV: Play position changed: 47671-ms[0m
+[0;32mI (145086) BT_AV: Audio packet count: 2100[0m
+[0;32mI (147386) BT_AV: Audio packet count: 2200[0m
+[0;32mI (149726) BT_AV: Audio packet count: 2300[0m
+[0;32mI (152076) BT_AV: Audio packet count: 2400[0m
+[0;32mI (152346) BT_APP_CORE: ringbuffer underflowed! mode changed: RINGBUFFER_MODE_PREFETCHING[0m
+[0;32mI (152716) BT_APP_CORE: ringbuffer data increased! mode changed: RINGBUFFER_MODE_PROCESSING[0m
+[0;32mI (152866) BT_APP_CORE: ringbuffer underflowed! mode changed: RINGBUFFER_MODE_PREFETCHING[0m
+[0;32mI (152926) BT_APP_CORE: ringbuffer data increased! mode changed: RINGBUFFER_MODE_PROCESSING[0m
+[0;33mW (153426) BT_APP_CORE: ringbuffer overflowed, ready to decrease data! mode changed: RINGBUFFER_MODE_DROPPING[0m
+[0;33mW (153436) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (153456) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (153466) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (153486) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;32mI (153486) BT_APP_CORE: ringbuffer data decreased! mode changed: RINGBUFFER_MODE_PROCESSING[0m
+[0;33mW (153846) BT_APP_CORE: ringbuffer overflowed, ready to decrease data! mode changed: RINGBUFFER_MODE_DROPPING[0m
+[0;33mW (153856) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (153866) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (153886) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;32mI (153886) BT_APP_CORE: ringbuffer data decreased! mode changed: RINGBUFFER_MODE_PROCESSING[0m
+[0;32mI (154156) RC_CT: AVRC event notification: 5[0m
+[0;32mI (154156) BT_AV: Play position changed: 57794-ms[0m
+[0;32mI (154616) BT_AV: Audio packet count: 2500[0m
+[0;33mW (154656) BT_APP_CORE: ringbuffer overflowed, ready to decrease data! mode changed: RINGBUFFER_MODE_DROPPING[0m
+[0;33mW (154656) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (154666) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (154676) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (154676) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (154686) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (154696) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (154706) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (154706) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;32mI (154706) BT_APP_CORE: ringbuffer data decreased! mode changed: RINGBUFFER_MODE_PROCESSING[0m
+[0;32mI (155256) BT_APP_CORE: ringbuffer underflowed! mode changed: RINGBUFFER_MODE_PREFETCHING[0m
+[0;32mI (155276) BT_APP_CORE: ringbuffer data increased! mode changed: RINGBUFFER_MODE_PROCESSING[0m
+[0;32mI (156686) BT_AV: Audio packet count: 2600[0m
+[0;32mI (158996) BT_AV: Audio packet count: 2700[0m
+[0;32mI (161326) BT_AV: Audio packet count: 2800[0m
+[0;32mI (163646) BT_AV: Audio packet count: 2900[0m
+[0;32mI (164516) RC_CT: AVRC event notification: 5[0m
+[0;32mI (164516) BT_AV: Play position changed: 68266-ms[0m
+[0;32mI (165956) BT_AV: Audio packet count: 3000[0m
+[0;32mI (168306) BT_AV: Audio packet count: 3100[0m
+[0;32mI (170646) BT_AV: Audio packet count: 3200[0m
+[0;32mI (171266) BT_APP_CORE: ringbuffer underflowed! mode changed: RINGBUFFER_MODE_PREFETCHING[0m
+[0;32mI (171306) BT_APP_CORE: ringbuffer data increased! mode changed: RINGBUFFER_MODE_PROCESSING[0m
+[0;32mI (171806) BT_APP_CORE: ringbuffer underflowed! mode changed: RINGBUFFER_MODE_PREFETCHING[0m
+[0;32mI (171896) BT_APP_CORE: ringbuffer data increased! mode changed: RINGBUFFER_MODE_PROCESSING[0m
+[0;32mI (172146) BT_APP_CORE: ringbuffer underflowed! mode changed: RINGBUFFER_MODE_PREFETCHING[0m
+[0;32mI (172266) BT_APP_CORE: ringbuffer data increased! mode changed: RINGBUFFER_MODE_PROCESSING[0m
+[0;33mW (172846) BT_APP_CORE: ringbuffer overflowed, ready to decrease data! mode changed: RINGBUFFER_MODE_DROPPING[0m
+[0;33mW (172846) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (172876) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (172956) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;32mI (172956) BT_APP_CORE: ringbuffer data decreased! mode changed: RINGBUFFER_MODE_PROCESSING[0m
+[0;32mI (173036) BT_AV: Audio packet count: 3300[0m
+[0;33mW (173036) BT_APP_CORE: ringbuffer overflowed, ready to decrease data! mode changed: RINGBUFFER_MODE_DROPPING[0m
+[0;33mW (173046) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (173086) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (173096) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;32mI (173096) BT_APP_CORE: ringbuffer data decreased! mode changed: RINGBUFFER_MODE_PROCESSING[0m
+[0;33mW (173416) BT_APP_CORE: ringbuffer overflowed, ready to decrease data! mode changed: RINGBUFFER_MODE_DROPPING[0m
+[0;33mW (173446) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (173476) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;32mI (173476) BT_APP_CORE: ringbuffer data decreased! mode changed: RINGBUFFER_MODE_PROCESSING[0m
+[0;32mI (174646) RC_CT: AVRC event notification: 5[0m
+[0;32mI (174646) BT_AV: Play position changed: 78400-ms[0m
+[0;32mI (175256) BT_AV: Audio packet count: 3400[0m
+[0;32mI (175986) BT_APP_CORE: ringbuffer underflowed! mode changed: RINGBUFFER_MODE_PREFETCHING[0m
+[0;32mI (176106) BT_APP_CORE: ringbuffer data increased! mode changed: RINGBUFFER_MODE_PROCESSING[0m
+[0;32mI (176846) BT_APP_CORE: ringbuffer underflowed! mode changed: RINGBUFFER_MODE_PREFETCHING[0m
+[0;32mI (177056) BT_APP_CORE: ringbuffer data increased! mode changed: RINGBUFFER_MODE_PROCESSING[0m
+[0;33mW (177216) BT_APP_CORE: ringbuffer overflowed, ready to decrease data! mode changed: RINGBUFFER_MODE_DROPPING[0m
+[0;33mW (177226) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (177236) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (177256) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (177296) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;32mI (177296) BT_APP_CORE: ringbuffer data decreased! mode changed: RINGBUFFER_MODE_PROCESSING[0m
+[0;32mI (177416) BT_APP_CORE: ringbuffer underflowed! mode changed: RINGBUFFER_MODE_PREFETCHING[0m
+[0;32mI (177556) BT_APP_CORE: ringbuffer data increased! mode changed: RINGBUFFER_MODE_PROCESSING[0m
+[0;32mI (177806) BT_APP_CORE: ringbuffer underflowed! mode changed: RINGBUFFER_MODE_PREFETCHING[0m
+[0;32mI (178146) BT_APP_CORE: ringbuffer data increased! mode changed: RINGBUFFER_MODE_PROCESSING[0m
+[0;32mI (178296) BT_AV: Audio packet count: 3500[0m
+[0;33mW (178626) BT_APP_CORE: ringbuffer overflowed, ready to decrease data! mode changed: RINGBUFFER_MODE_DROPPING[0m
+[0;33mW (178656) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (178666) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (178706) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;32mI (178706) BT_APP_CORE: ringbuffer data decreased! mode changed: RINGBUFFER_MODE_PROCESSING[0m
+[0;33mW (179246) BT_APP_CORE: ringbuffer overflowed, ready to decrease data! mode changed: RINGBUFFER_MODE_DROPPING[0m
+[0;33mW (179306) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;32mI (179306) BT_APP_CORE: ringbuffer data decreased! mode changed: RINGBUFFER_MODE_PROCESSING[0m
+[0;32mI (179506) BT_APP_CORE: ringbuffer underflowed! mode changed: RINGBUFFER_MODE_PREFETCHING[0m
+[0;32mI (179726) BT_APP_CORE: ringbuffer data increased! mode changed: RINGBUFFER_MODE_PROCESSING[0m
+[0;32mI (180656) BT_AV: Audio packet count: 3600[0m
+[0;33mW (182156) BT_APP_CORE: ringbuffer overflowed, ready to decrease data! mode changed: RINGBUFFER_MODE_DROPPING[0m
+[0;33mW (182186) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (182196) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (182216) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;32mI (182216) BT_APP_CORE: ringbuffer data decreased! mode changed: RINGBUFFER_MODE_PROCESSING[0m
+[0;33mW (182456) BT_APP_CORE: ringbuffer overflowed, ready to decrease data! mode changed: RINGBUFFER_MODE_DROPPING[0m
+[0;33mW (182466) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (182486) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (182506) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;32mI (182506) BT_APP_CORE: ringbuffer data decreased! mode changed: RINGBUFFER_MODE_PROCESSING[0m
+[0;32mI (182726) BT_AV: Audio packet count: 3700[0m
+[0;33mW (182876) BT_APP_CORE: ringbuffer overflowed, ready to decrease data! mode changed: RINGBUFFER_MODE_DROPPING[0m
+[0;33mW (182886) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (182886) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (182926) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;32mI (182926) BT_APP_CORE: ringbuffer data decreased! mode changed: RINGBUFFER_MODE_PROCESSING[0m
+[0;32mI (183176) BT_APP_CORE: ringbuffer underflowed! mode changed: RINGBUFFER_MODE_PREFETCHING[0m
+[0;32mI (183326) BT_APP_CORE: ringbuffer data increased! mode changed: RINGBUFFER_MODE_PROCESSING[0m
+[0;33mW (183736) BT_APP_CORE: ringbuffer overflowed, ready to decrease data! mode changed: RINGBUFFER_MODE_DROPPING[0m
+[0;33mW (183766) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (183796) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;32mI (183796) BT_APP_CORE: ringbuffer data decreased! mode changed: RINGBUFFER_MODE_PROCESSING[0m
+[0;33mW (183966) BT_APP_CORE: ringbuffer overflowed, ready to decrease data! mode changed: RINGBUFFER_MODE_DROPPING[0m
+[0;33mW (183996) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (184006) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (184036) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;32mI (184036) BT_APP_CORE: ringbuffer data decreased! mode changed: RINGBUFFER_MODE_PROCESSING[0m
+[0;33mW (184176) BT_APP_CORE: ringbuffer overflowed, ready to decrease data! mode changed: RINGBUFFER_MODE_DROPPING[0m
+[0;33mW (184186) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (184216) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (184236) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;32mI (184236) BT_APP_CORE: ringbuffer data decreased! mode changed: RINGBUFFER_MODE_PROCESSING[0m
+[0;32mI (184986) BT_APP_CORE: ringbuffer underflowed! mode changed: RINGBUFFER_MODE_PREFETCHING[0m
+[0;32mI (184996) BT_AV: Audio packet count: 3800[0m
+[0;32mI (185006) RC_CT: AVRC event notification: 5[0m
+[0;32mI (185006) BT_AV: Play position changed: 88586-ms[0m
+[0;32mI (185096) BT_APP_CORE: ringbuffer data increased! mode changed: RINGBUFFER_MODE_PROCESSING[0m
+[0;33mW (185246) BT_APP_CORE: ringbuffer overflowed, ready to decrease data! mode changed: RINGBUFFER_MODE_DROPPING[0m
+[0;33mW (185256) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (185266) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (185276) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (185276) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (185376) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;32mI (185376) BT_APP_CORE: ringbuffer data decreased! mode changed: RINGBUFFER_MODE_PROCESSING[0m
+[0;32mI (185506) BT_APP_CORE: ringbuffer underflowed! mode changed: RINGBUFFER_MODE_PREFETCHING[0m
+[0;32mI (185616) BT_APP_CORE: ringbuffer data increased! mode changed: RINGBUFFER_MODE_PROCESSING[0m
+[0;33mW (185886) BT_APP_CORE: ringbuffer overflowed, ready to decrease data! mode changed: RINGBUFFER_MODE_DROPPING[0m
+[0;33mW (185916) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (185996) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;32mI (185996) BT_APP_CORE: ringbuffer data decreased! mode changed: RINGBUFFER_MODE_PROCESSING[0m
+[0;32mI (186506) BT_APP_CORE: ringbuffer underflowed! mode changed: RINGBUFFER_MODE_PREFETCHING[0m
+[0;32mI (186606) BT_APP_CORE: ringbuffer data increased! mode changed: RINGBUFFER_MODE_PROCESSING[0m
+[0;32mI (187266) BT_AV: Audio packet count: 3900[0m
+[0;33mW (187976) BT_APP_CORE: ringbuffer overflowed, ready to decrease data! mode changed: RINGBUFFER_MODE_DROPPING[0m
+[0;33mW (187976) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (187986) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (188006) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (188036) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;32mI (188036) BT_APP_CORE: ringbuffer data decreased! mode changed: RINGBUFFER_MODE_PROCESSING[0m
+[0;32mI (189466) BT_AV: Audio packet count: 4000[0m
+[0;32mI (190146) BT_APP_CORE: ringbuffer underflowed! mode changed: RINGBUFFER_MODE_PREFETCHING[0m
+[0;32mI (190246) BT_APP_CORE: ringbuffer data increased! mode changed: RINGBUFFER_MODE_PROCESSING[0m
+[0;32mI (190396) BT_APP_CORE: ringbuffer underflowed! mode changed: RINGBUFFER_MODE_PREFETCHING[0m
+[0;32mI (190466) BT_APP_CORE: ringbuffer data increased! mode changed: RINGBUFFER_MODE_PROCESSING[0m
+[0;33mW (190526) BT_APP_CORE: ringbuffer overflowed, ready to decrease data! mode changed: RINGBUFFER_MODE_DROPPING[0m
+[0;33mW (190546) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (190626) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;32mI (190626) BT_APP_CORE: ringbuffer data decreased! mode changed: RINGBUFFER_MODE_PROCESSING[0m
+[0;32mI (190776) BT_APP_CORE: ringbuffer underflowed! mode changed: RINGBUFFER_MODE_PREFETCHING[0m
+[0;32mI (190916) BT_APP_CORE: ringbuffer data increased! mode changed: RINGBUFFER_MODE_PROCESSING[0m
+[0;32mI (191186) BT_APP_CORE: ringbuffer underflowed! mode changed: RINGBUFFER_MODE_PREFETCHING[0m
+[0;32mI (191256) BT_APP_CORE: ringbuffer data increased! mode changed: RINGBUFFER_MODE_PROCESSING[0m
+[0;32mI (191526) BT_APP_CORE: ringbuffer underflowed! mode changed: RINGBUFFER_MODE_PREFETCHING[0m
+[0;32mI (191676) BT_APP_CORE: ringbuffer data increased! mode changed: RINGBUFFER_MODE_PROCESSING[0m
+[0;32mI (191826) BT_APP_CORE: ringbuffer underflowed! mode changed: RINGBUFFER_MODE_PREFETCHING[0m
+[0;32mI (193546) BT_APP_CORE: ringbuffer data increased! mode changed: RINGBUFFER_MODE_PROCESSING[0m
+[0;32mI (193646) BT_APP_CORE: ringbuffer underflowed! mode changed: RINGBUFFER_MODE_PREFETCHING[0m
+[0;32mI (197936) BT_APP_CORE: ringbuffer data increased! mode changed: RINGBUFFER_MODE_PROCESSING[0m
+[0;32mI (198036) BT_APP_CORE: ringbuffer underflowed! mode changed: RINGBUFFER_MODE_PREFETCHING[0m
+[0;32mI (198556) RC_CT: AVRC event notification: 5[0m
+[0;32mI (198556) BT_AV: Play position changed: 98874-ms[0m
+[0;32mI (199396) BT_APP_CORE: ringbuffer data increased! mode changed: RINGBUFFER_MODE_PROCESSING[0m
+[0;32mI (199556) BT_APP_CORE: ringbuffer underflowed! mode changed: RINGBUFFER_MODE_PREFETCHING[0m
+[0;32mI (200136) BT_APP_CORE: ringbuffer data increased! mode changed: RINGBUFFER_MODE_PROCESSING[0m
+[0;32mI (200146) BT_AV: Audio packet count: 4100[0m
+[0;32mI (200246) BT_APP_CORE: ringbuffer underflowed! mode changed: RINGBUFFER_MODE_PREFETCHING[0m
+[0;32mI (200916) BT_APP_CORE: ringbuffer data increased! mode changed: RINGBUFFER_MODE_PROCESSING[0m
+[0;33mW (201806) BT_APP_CORE: ringbuffer overflowed, ready to decrease data! mode changed: RINGBUFFER_MODE_DROPPING[0m
+[0;33mW (201816) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (201886) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;32mI (201886) BT_APP_CORE: ringbuffer data decreased! mode changed: RINGBUFFER_MODE_PROCESSING[0m
+[0;32mI (203036) BT_APP_CORE: ringbuffer underflowed! mode changed: RINGBUFFER_MODE_PREFETCHING[0m
+[0;32mI (203156) BT_APP_CORE: ringbuffer data increased! mode changed: RINGBUFFER_MODE_PROCESSING[0m
+[0;32mI (203156) BT_AV: Audio packet count: 4200[0m
+[0;33mW (204166) BT_APP_CORE: ringbuffer overflowed, ready to decrease data! mode changed: RINGBUFFER_MODE_DROPPING[0m
+[0;33mW (204196) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (204226) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;32mI (204226) BT_APP_CORE: ringbuffer data decreased! mode changed: RINGBUFFER_MODE_PROCESSING[0m
+[0;32mI (204866) BT_APP_CORE: ringbuffer underflowed! mode changed: RINGBUFFER_MODE_PREFETCHING[0m
+[0;32mI (205126) BT_APP_CORE: ringbuffer data increased! mode changed: RINGBUFFER_MODE_PROCESSING[0m
+[0;32mI (205276) BT_APP_CORE: ringbuffer underflowed! mode changed: RINGBUFFER_MODE_PREFETCHING[0m
+[0;32mI (205456) BT_APP_CORE: ringbuffer data increased! mode changed: RINGBUFFER_MODE_PROCESSING[0m
+[0;32mI (205626) BT_APP_CORE: ringbuffer underflowed! mode changed: RINGBUFFER_MODE_PREFETCHING[0m
+[0;32mI (205716) BT_APP_CORE: ringbuffer data increased! mode changed: RINGBUFFER_MODE_PROCESSING[0m
+[0;32mI (205896) BT_APP_CORE: ringbuffer underflowed! mode changed: RINGBUFFER_MODE_PREFETCHING[0m
+[0;32mI (206536) BT_APP_CORE: ringbuffer data increased! mode changed: RINGBUFFER_MODE_PROCESSING[0m
+[0;32mI (206536) BT_AV: Audio packet count: 4300[0m
+[0;32mI (206686) BT_APP_CORE: ringbuffer underflowed! mode changed: RINGBUFFER_MODE_PREFETCHING[0m
+[0;32mI (207006) BT_APP_CORE: ringbuffer data increased! mode changed: RINGBUFFER_MODE_PROCESSING[0m
+[0;32mI (207186) BT_APP_CORE: ringbuffer underflowed! mode changed: RINGBUFFER_MODE_PREFETCHING[0m
+[0;32mI (207646) BT_APP_CORE: ringbuffer data increased! mode changed: RINGBUFFER_MODE_PROCESSING[0m
+[0;32mI (207956) BT_APP_CORE: ringbuffer underflowed! mode changed: RINGBUFFER_MODE_PREFETCHING[0m
+[0;32mI (208206) BT_APP_CORE: ringbuffer data increased! mode changed: RINGBUFFER_MODE_PROCESSING[0m
+[0;32mI (208386) BT_APP_CORE: ringbuffer underflowed! mode changed: RINGBUFFER_MODE_PREFETCHING[0m
+[0;32mI (208576) BT_APP_CORE: ringbuffer data increased! mode changed: RINGBUFFER_MODE_PROCESSING[0m
+[0;33mW (208816) BT_APP_CORE: ringbuffer overflowed, ready to decrease data! mode changed: RINGBUFFER_MODE_DROPPING[0m
+[0;33mW (208836) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (208866) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;32mI (208866) BT_APP_CORE: ringbuffer data decreased! mode changed: RINGBUFFER_MODE_PROCESSING[0m
+[0;33mW (208966) BT_APP_CORE: ringbuffer overflowed, ready to decrease data! mode changed: RINGBUFFER_MODE_DROPPING[0m
+[0;33mW (208976) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (208986) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (208986) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (208996) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (209006) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;32mI (209006) BT_APP_CORE: ringbuffer data decreased! mode changed: RINGBUFFER_MODE_PROCESSING[0m
+[0;33mW (209146) BT_APP_CORE: ringbuffer overflowed, ready to decrease data! mode changed: RINGBUFFER_MODE_DROPPING[0m
+[0;33mW (209146) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (209156) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (209156) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (209166) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (209176) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (209186) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;32mI (209186) BT_APP_CORE: ringbuffer data decreased! mode changed: RINGBUFFER_MODE_PROCESSING[0m
+[0;33mW (209466) BT_APP_CORE: ringbuffer overflowed, ready to decrease data! mode changed: RINGBUFFER_MODE_DROPPING[0m
+[0;33mW (209476) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (209496) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (209506) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (209506) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;32mI (209506) BT_AV: Audio packet count: 4400[0m
+[0;33mW (209546) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;32mI (209546) BT_APP_CORE: ringbuffer data decreased! mode changed: RINGBUFFER_MODE_PROCESSING[0m
+[0;32mI (210116) RC_CT: AVRC event notification: 5[0m
+[0;32mI (210116) BT_AV: Play position changed: 113880-ms[0m
+[0;32mI (211866) BT_AV: Audio packet count: 4500[0m
+[0;32mI (212186) BT_APP_CORE: ringbuffer underflowed! mode changed: RINGBUFFER_MODE_PREFETCHING[0m
+[0;32mI (212236) BT_APP_CORE: ringbuffer data increased! mode changed: RINGBUFFER_MODE_PROCESSING[0m
+[0;32mI (213326) BT_APP_CORE: ringbuffer underflowed! mode changed: RINGBUFFER_MODE_PREFETCHING[0m
+[0;32mI (213446) BT_APP_CORE: ringbuffer data increased! mode changed: RINGBUFFER_MODE_PROCESSING[0m
+[0;32mI (213716) BT_APP_CORE: ringbuffer underflowed! mode changed: RINGBUFFER_MODE_PREFETCHING[0m
+[0;32mI (213846) BT_APP_CORE: ringbuffer data increased! mode changed: RINGBUFFER_MODE_PROCESSING[0m
+[0;32mI (214456) BT_AV: Audio packet count: 4600[0m
+[0;33mW (214626) BT_APP_CORE: ringbuffer overflowed, ready to decrease data! mode changed: RINGBUFFER_MODE_DROPPING[0m
+[0;33mW (214656) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (214756) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;32mI (214756) BT_APP_CORE: ringbuffer data decreased! mode changed: RINGBUFFER_MODE_PROCESSING[0m
+[0;33mW (215696) BT_APP_CORE: ringbuffer overflowed, ready to decrease data! mode changed: RINGBUFFER_MODE_DROPPING[0m
+[0;33mW (215706) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (215726) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (215726) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (215786) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;32mI (215786) BT_APP_CORE: ringbuffer data decreased! mode changed: RINGBUFFER_MODE_PROCESSING[0m
+[0;32mI (215876) BT_APP_CORE: ringbuffer underflowed! mode changed: RINGBUFFER_MODE_PREFETCHING[0m
+[0;32mI (215926) BT_APP_CORE: ringbuffer data increased! mode changed: RINGBUFFER_MODE_PROCESSING[0m
+[0;32mI (216656) BT_AV: Audio packet count: 4700[0m
+[0;32mI (216916) BT_APP_CORE: ringbuffer underflowed! mode changed: RINGBUFFER_MODE_PREFETCHING[0m
+[0;32mI (216966) BT_APP_CORE: ringbuffer data increased! mode changed: RINGBUFFER_MODE_PROCESSING[0m
+[0;33mW (217206) BT_APP_CORE: ringbuffer overflowed, ready to decrease data! mode changed: RINGBUFFER_MODE_DROPPING[0m
+[0;33mW (217226) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (217236) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (217236) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (217266) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;32mI (217266) BT_APP_CORE: ringbuffer data decreased! mode changed: RINGBUFFER_MODE_PROCESSING[0m
+[0;32mI (218796) BT_AV: Audio packet count: 4800[0m
+[0;32mI (220326) RC_CT: AVRC event notification: 5[0m
+[0;32mI (220326) BT_AV: Play position changed: 124093-ms[0m
+[0;32mI (221116) BT_AV: Audio packet count: 4900[0m
+[0;32mI (223446) BT_AV: Audio packet count: 5000[0m
+[0;32mI (225766) BT_AV: Audio packet count: 5100[0m
+[0;32mI (228086) BT_AV: Audio packet count: 5200[0m
+[0;32mI (230396) BT_AV: Audio packet count: 5300[0m
+[0;32mI (230436) RC_CT: AVRC event notification: 5[0m
+[0;32mI (230436) BT_AV: Play position changed: 134199-ms[0m
+[0;32mI (232716) BT_AV: Audio packet count: 5400[0m
+[0;32mI (235056) BT_AV: Audio packet count: 5500[0m
+[0;32mI (237366) BT_AV: Audio packet count: 5600[0m
+[0;32mI (239686) BT_AV: Audio packet count: 5700[0m
+[0;32mI (240656) RC_CT: AVRC event notification: 5[0m
+[0;32mI (240656) BT_AV: Play position changed: 144343-ms[0m
+[0;32mI (242016) BT_AV: Audio packet count: 5800[0m
+[0;32mI (244336) BT_AV: Audio packet count: 5900[0m
+[0;32mI (246666) BT_AV: Audio packet count: 6000[0m
+[0;32mI (248966) BT_AV: Audio packet count: 6100[0m
+[0;32mI (250816) RC_CT: AVRC event notification: 5[0m
+[0;32mI (250816) BT_AV: Play position changed: 154562-ms[0m
+[0;32mI (251306) BT_AV: Audio packet count: 6200[0m
+[0;32mI (253686) BT_AV: Audio packet count: 6300[0m
+[0;32mI (254146) BT_APP_CORE: ringbuffer underflowed! mode changed: RINGBUFFER_MODE_PREFETCHING[0m
+[0;32mI (254256) BT_APP_CORE: ringbuffer data increased! mode changed: RINGBUFFER_MODE_PROCESSING[0m
+[0;32mI (254476) BT_APP_CORE: ringbuffer underflowed! mode changed: RINGBUFFER_MODE_PREFETCHING[0m
+[0;32mI (254556) BT_APP_CORE: ringbuffer data increased! mode changed: RINGBUFFER_MODE_PROCESSING[0m
+[0;33mW (254726) BT_APP_CORE: ringbuffer overflowed, ready to decrease data! mode changed: RINGBUFFER_MODE_DROPPING[0m
+[0;33mW (254746) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (254746) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (254756) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (254786) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;32mI (254786) BT_APP_CORE: ringbuffer data decreased! mode changed: RINGBUFFER_MODE_PROCESSING[0m
+[0;33mW (255006) BT_APP_CORE: ringbuffer overflowed, ready to decrease data! mode changed: RINGBUFFER_MODE_DROPPING[0m
+[0;33mW (255036) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (255046) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;32mI (255046) BT_APP_CORE: ringbuffer data decreased! mode changed: RINGBUFFER_MODE_PROCESSING[0m
+[0;32mI (255956) BT_AV: Audio packet count: 6400[0m
+[0;32mI (256686) BT_APP_CORE: ringbuffer underflowed! mode changed: RINGBUFFER_MODE_PREFETCHING[0m
+[0;32mI (256836) BT_APP_CORE: ringbuffer data increased! mode changed: RINGBUFFER_MODE_PROCESSING[0m
+[0;33mW (257516) BT_APP_CORE: ringbuffer overflowed, ready to decrease data! mode changed: RINGBUFFER_MODE_DROPPING[0m
+[0;33mW (257536) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (257546) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (257556) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (257576) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;32mI (257576) BT_APP_CORE: ringbuffer data decreased! mode changed: RINGBUFFER_MODE_PROCESSING[0m
+[0;32mI (258296) BT_AV: Audio packet count: 6500[0m
+[0;32mI (260416) BT_APP_CORE: ringbuffer underflowed! mode changed: RINGBUFFER_MODE_PREFETCHING[0m
+[0;32mI (260486) BT_APP_CORE: ringbuffer data increased! mode changed: RINGBUFFER_MODE_PROCESSING[0m
+[0;33mW (260556) BT_APP_CORE: ringbuffer overflowed, ready to decrease data! mode changed: RINGBUFFER_MODE_DROPPING[0m
+[0;33mW (260566) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (260606) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;32mI (260606) BT_APP_CORE: ringbuffer data decreased! mode changed: RINGBUFFER_MODE_PROCESSING[0m
+[0;32mI (260616) BT_AV: Audio packet count: 6600[0m
+[0;32mI (260926) RC_CT: AVRC event notification: 5[0m
+[0;32mI (260926) BT_AV: Play position changed: 164686-ms[0m
+[0;32mI (262906) BT_AV: Audio packet count: 6700[0m
+[0;32mI (265246) BT_AV: Audio packet count: 6800[0m
+[0;32mI (267566) BT_AV: Audio packet count: 6900[0m
+[0;32mI (269866) BT_AV: Audio packet count: 7000[0m
+[0;32mI (271076) RC_CT: AVRC event notification: 5[0m
+[0;32mI (271076) BT_AV: Play position changed: 174808-ms[0m
+[0;32mI (272206) BT_AV: Audio packet count: 7100[0m
+[0;32mI (274536) BT_AV: Audio packet count: 7200[0m
+[0;32mI (276836) BT_AV: Audio packet count: 7300[0m
+[0;32mI (279166) BT_AV: Audio packet count: 7400[0m
+[0;32mI (281166) RC_CT: AVRC event notification: 5[0m
+[0;32mI (281166) BT_AV: Play position changed: 184941-ms[0m
+[0;32mI (281506) BT_AV: Audio packet count: 7500[0m
+[0;32mI (283806) BT_AV: Audio packet count: 7600[0m
+[0;32mI (286136) BT_AV: Audio packet count: 7700[0m
+[0;32mI (288466) BT_AV: Audio packet count: 7800[0m
+[0;32mI (290776) BT_AV: Audio packet count: 7900[0m
+[0;32mI (291296) RC_CT: AVRC event notification: 5[0m
+[0;32mI (291296) BT_AV: Play position changed: 195057-ms[0m
+[0;32mI (293096) BT_AV: Audio packet count: 8000[0m
+[0;32mI (295436) BT_AV: Audio packet count: 8100[0m
+[0;32mI (297746) BT_AV: Audio packet count: 8200[0m
+[0;32mI (300066) BT_AV: Audio packet count: 8300[0m
+[0;32mI (301436) RC_CT: AVRC event notification: 5[0m
+[0;32mI (301436) BT_AV: Play position changed: 205181-ms[0m
+[0;32mI (302386) BT_AV: Audio packet count: 8400[0m
+[0;32mI (304706) BT_AV: Audio packet count: 8500[0m
+[0;32mI (307036) BT_AV: Audio packet count: 8600[0m
+[0;32mI (309356) BT_AV: Audio packet count: 8700[0m
+[0;32mI (311586) RC_CT: AVRC event notification: 5[0m
+[0;32mI (311596) BT_AV: Play position changed: 215342-ms[0m
+[0;32mI (311676) BT_AV: Audio packet count: 8800[0m
+[0;32mI (314006) BT_AV: Audio packet count: 8900[0m
+[0;32mI (316326) BT_AV: Audio packet count: 9000[0m
+[0;32mI (318646) BT_AV: Audio packet count: 9100[0m
+[0;32mI (320966) BT_AV: Audio packet count: 9200[0m
+[0;32mI (321736) RC_CT: AVRC event notification: 5[0m
+[0;32mI (321736) BT_AV: Play position changed: 225490-ms[0m
+[0;32mI (323286) BT_AV: Audio packet count: 9300[0m
+[0;32mI (325606) BT_AV: Audio packet count: 9400[0m
+[0;32mI (327926) BT_AV: Audio packet count: 9500[0m
+[0;32mI (330256) BT_AV: Audio packet count: 9600[0m
+[0;32mI (331866) RC_CT: AVRC event notification: 5[0m
+[0;32mI (331866) BT_AV: Play position changed: 235635-ms[0m
+[0;32mI (332576) BT_AV: Audio packet count: 9700[0m
+[0;32mI (334886) BT_AV: Audio packet count: 9800[0m
+[0;32mI (337216) BT_AV: Audio packet count: 9900[0m
+[0;32mI (339536) BT_AV: Audio packet count: 10000[0m
+[0;32mI (340006) BT_APP_CORE: ringbuffer underflowed! mode changed: RINGBUFFER_MODE_PREFETCHING[0m
+[0;32mI (340056) BT_APP_CORE: ringbuffer data increased! mode changed: RINGBUFFER_MODE_PROCESSING[0m
+[0;32mI (340326) BT_APP_CORE: ringbuffer underflowed! mode changed: RINGBUFFER_MODE_PREFETCHING[0m
+[0;32mI (340486) BT_APP_CORE: ringbuffer data increased! mode changed: RINGBUFFER_MODE_PROCESSING[0m
+[0;32mI (340616) BT_APP_CORE: ringbuffer underflowed! mode changed: RINGBUFFER_MODE_PREFETCHING[0m
+[0;32mI (340766) BT_APP_CORE: ringbuffer data increased! mode changed: RINGBUFFER_MODE_PROCESSING[0m
+[0;32mI (340926) BT_APP_CORE: ringbuffer underflowed! mode changed: RINGBUFFER_MODE_PREFETCHING[0m
+[0;32mI (341036) BT_APP_CORE: ringbuffer data increased! mode changed: RINGBUFFER_MODE_PROCESSING[0m
+[0;33mW (341116) BT_APP_CORE: ringbuffer overflowed, ready to decrease data! mode changed: RINGBUFFER_MODE_DROPPING[0m
+[0;33mW (341126) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (341176) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;32mI (341176) BT_APP_CORE: ringbuffer data decreased! mode changed: RINGBUFFER_MODE_PROCESSING[0m
+[0;33mW (341226) BT_APP_CORE: ringbuffer overflowed, ready to decrease data! mode changed: RINGBUFFER_MODE_DROPPING[0m
+[0;33mW (341236) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (341246) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (341256) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (341256) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (341266) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (341276) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (341276) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (341286) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;32mI (341286) BT_APP_CORE: ringbuffer data decreased! mode changed: RINGBUFFER_MODE_PROCESSING[0m
+[0;33mW (341326) BT_APP_CORE: ringbuffer overflowed, ready to decrease data! mode changed: RINGBUFFER_MODE_DROPPING[0m
+[0;33mW (341336) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (341336) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (341346) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (341356) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (341356) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (341366) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (341376) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;32mI (341376) BT_APP_CORE: ringbuffer data decreased! mode changed: RINGBUFFER_MODE_PROCESSING[0m
+[0;32mI (341866) BT_AV: Audio packet count: 10100[0m
+[0;32mI (341966) RC_CT: AVRC event notification: 5[0m
+[0;32mI (341966) BT_AV: Play position changed: 245743-ms[0m
+[0;32mI (344176) BT_AV: Audio packet count: 10200[0m
+[0;32mI (346496) BT_AV: Audio packet count: 10300[0m
+[0;32mI (348826) BT_AV: Audio packet count: 10400[0m
+[0;32mI (351146) BT_AV: Audio packet count: 10500[0m
+[0;32mI (352086) RC_CT: AVRC event notification: 5[0m
+[0;32mI (352086) BT_AV: Play position changed: 255843-ms[0m
+[0;32mI (353486) BT_AV: Audio packet count: 10600[0m
+[0;32mI (355786) BT_AV: Audio packet count: 10700[0m
+[0;32mI (358146) BT_AV: Audio packet count: 10800[0m
+[0;32mI (360426) BT_AV: Audio packet count: 10900[0m
+[0;32mI (362196) RC_CT: AVRC event notification: 5[0m
+[0;32mI (362196) BT_AV: Play position changed: 265947-ms[0m
+[0;32mI (362756) BT_AV: Audio packet count: 11000[0m
+[0;32mI (363106) RC_CT: AVRC event notification: 5[0m
+[0;32mI (363106) BT_AV: Play position changed: 59-ms[0m
+[0;32mI (363126) RC_CT: AVRC event notification: 2[0m
+[0;32mI (363206) RC_CT: AVRC metadata rsp: attribute id 0x1, Heartland Bank[0m
+[0;32mI (363206) RC_CT: AVRC metadata rsp: attribute id 0x2, Advertisement[0m
+[0;32mI (365106) BT_AV: Audio packet count: 11100[0m
+[0;32mI (367406) BT_AV: Audio packet count: 11200[0m
+[0;32mI (369736) BT_AV: Audio packet count: 11300[0m
+[0;32mI (372046) BT_AV: Audio packet count: 11400[0m
+[0;32mI (373236) RC_CT: AVRC event notification: 5[0m
+[0;32mI (373236) BT_AV: Play position changed: 10190-ms[0m
+[0;32mI (374366) BT_AV: Audio packet count: 11500[0m
+[0;32mI (376706) BT_AV: Audio packet count: 11600[0m
+[0;32mI (379026) BT_AV: Audio packet count: 11700[0m
+[0;32mI (381336) BT_AV: Audio packet count: 11800[0m
+[0;32mI (383376) RC_CT: AVRC event notification: 5[0m
+[0;32mI (383376) BT_AV: Play position changed: 20309-ms[0m
+[0;32mI (383656) BT_AV: Audio packet count: 11900[0m
+[0;32mI (385976) BT_AV: Audio packet count: 12000[0m
+[0;32mI (388286) BT_AV: Audio packet count: 12100[0m
+[0;32mI (390616) BT_AV: Audio packet count: 12200[0m
+[0;32mI (392936) BT_AV: Audio packet count: 12300[0m
+[0;32mI (393476) RC_CT: AVRC event notification: 5[0m
+[0;32mI (393476) BT_AV: Play position changed: 30093-ms[0m
+[0;32mI (393726) RC_CT: AVRC event notification: 5[0m
+[0;32mI (393726) BT_AV: Play position changed: 49-ms[0m
+[0;32mI (393766) RC_CT: AVRC event notification: 2[0m
+[0;32mI (393836) RC_CT: AVRC metadata rsp: attribute id 0x1, Pizza Ranch[0m
+[0;32mI (393836) RC_CT: AVRC metadata rsp: attribute id 0x2, Advertisement[0m
+[0;32mI (395316) BT_AV: Audio packet count: 12400[0m
+[0;32mI (395656) BT_APP_CORE: ringbuffer underflowed! mode changed: RINGBUFFER_MODE_PREFETCHING[0m
+[0;32mI (395726) BT_APP_CORE: ringbuffer data increased! mode changed: RINGBUFFER_MODE_PROCESSING[0m
+[0;33mW (395956) BT_APP_CORE: ringbuffer overflowed, ready to decrease data! mode changed: RINGBUFFER_MODE_DROPPING[0m
+[0;33mW (395986) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (396006) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;32mI (396006) BT_APP_CORE: ringbuffer data decreased! mode changed: RINGBUFFER_MODE_PROCESSING[0m
+[0;32mI (397576) BT_AV: Audio packet count: 12500[0m
+[0;32mI (399946) BT_AV: Audio packet count: 12600[0m
+[0;32mI (402236) BT_AV: Audio packet count: 12700[0m
+[0;32mI (403796) RC_CT: AVRC event notification: 5[0m
+[0;32mI (403796) BT_AV: Play position changed: 10091-ms[0m
+[0;32mI (404546) BT_AV: Audio packet count: 12800[0m
+[0;32mI (406866) BT_AV: Audio packet count: 12900[0m
+[0;32mI (409206) BT_AV: Audio packet count: 13000[0m
+[0;32mI (411526) BT_AV: Audio packet count: 13100[0m
+[0;32mI (413856) BT_AV: Audio packet count: 13200[0m
+[0;32mI (413916) RC_CT: AVRC event notification: 5[0m
+[0;32mI (413916) BT_AV: Play position changed: 20202-ms[0m
+[0;32mI (416166) BT_AV: Audio packet count: 13300[0m
+[0;32mI (418496) BT_AV: Audio packet count: 13400[0m
+[0;32mI (420816) BT_AV: Audio packet count: 13500[0m
+[0;32mI (423126) BT_AV: Audio packet count: 13600[0m
+[0;32mI (423396) BT_APP_CORE: ringbuffer underflowed! mode changed: RINGBUFFER_MODE_PREFETCHING[0m
+[0;32mI (423446) BT_APP_CORE: ringbuffer data increased! mode changed: RINGBUFFER_MODE_PROCESSING[0m
+[0;32mI (424036) RC_CT: AVRC event notification: 5[0m
+[0;32mI (424036) BT_AV: Play position changed: 30093-ms[0m
+[0;32mI (424556) RC_CT: AVRC event notification: 5[0m
+[0;32mI (424556) BT_AV: Play position changed: 0-ms[0m
+[0;32mI (424556) RC_CT: AVRC event notification: 2[0m
+[0;32mI (424616) RC_CT: AVRC metadata rsp: attribute id 0x1, Smartfood[0m
+[0;32mI (424616) RC_CT: AVRC metadata rsp: attribute id 0x2, Advertisement[0m
+[0;32mI (425056) RC_CT: AVRC event notification: 5[0m
+[0;32mI (425056) BT_AV: Play position changed: 57-ms[0m
+[0;32mI (425446) BT_AV: Audio packet count: 13700[0m
+[0;32mI (427766) BT_AV: Audio packet count: 13800[0m
+[0;32mI (428196) BT_APP_CORE: ringbuffer underflowed! mode changed: RINGBUFFER_MODE_PREFETCHING[0m
+[0;32mI (428346) BT_APP_CORE: ringbuffer data increased! mode changed: RINGBUFFER_MODE_PROCESSING[0m
+[0;33mW (428726) BT_APP_CORE: ringbuffer overflowed, ready to decrease data! mode changed: RINGBUFFER_MODE_DROPPING[0m
+[0;33mW (428746) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (428796) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;32mI (428796) BT_APP_CORE: ringbuffer data decreased! mode changed: RINGBUFFER_MODE_PROCESSING[0m
+[0;33mW (429866) BT_APP_CORE: ringbuffer overflowed, ready to decrease data! mode changed: RINGBUFFER_MODE_DROPPING[0m
+[0;33mW (429886) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (429896) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (429936) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;32mI (429936) BT_APP_CORE: ringbuffer data decreased! mode changed: RINGBUFFER_MODE_PROCESSING[0m
+[0;32mI (430156) BT_AV: Audio packet count: 13900[0m
+[0;32mI (432466) BT_AV: Audio packet count: 14000[0m
+[0;32mI (432886) BT_APP_CORE: ringbuffer underflowed! mode changed: RINGBUFFER_MODE_PREFETCHING[0m
+[0;32mI (432966) BT_APP_CORE: ringbuffer data increased! mode changed: RINGBUFFER_MODE_PROCESSING[0m
+[0;33mW (433306) BT_APP_CORE: ringbuffer overflowed, ready to decrease data! mode changed: RINGBUFFER_MODE_DROPPING[0m
+[0;33mW (433346) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (433346) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (433366) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;32mI (433366) BT_APP_CORE: ringbuffer data decreased! mode changed: RINGBUFFER_MODE_PROCESSING[0m
+[0;32mI (434746) BT_AV: Audio packet count: 14100[0m
+[0;32mI (434856) RC_CT: AVRC event notification: 5[0m
+[0;32mI (434856) BT_AV: Play position changed: 9240-ms[0m
+[0;32mI (437056) BT_AV: Audio packet count: 14200[0m
+[0;32mI (439376) BT_AV: Audio packet count: 14300[0m
+[0;32mI (441716) BT_AV: Audio packet count: 14400[0m
+[0;32mI (444036) BT_AV: Audio packet count: 14500[0m
+[0;32mI (444956) RC_CT: AVRC event notification: 5[0m
+[0;32mI (444956) BT_AV: Play position changed: 19326-ms[0m
+[0;32mI (446346) BT_AV: Audio packet count: 14600[0m
+[0;32mI (448676) BT_AV: Audio packet count: 14700[0m
+[0;32mI (450986) BT_AV: Audio packet count: 14800[0m
+[0;32mI (451116) RC_CT: AVRC event notification: 5[0m
+[0;32mI (451116) BT_AV: Play position changed: 56-ms[0m
+[0;32mI (451126) RC_CT: AVRC event notification: 2[0m
+[0;32mI (451166) RC_CT: AVRC metadata rsp: attribute id 0x1, Too Sweet[0m
+[0;32mI (451166) RC_CT: AVRC metadata rsp: attribute id 0x2, Hozier[0m
+[0;32mI (451176) RC_CT: AVRC metadata rsp: attribute id 0x4, Unreal Unearth: Unheard[0m
+[0;32mI (453306) BT_AV: Audio packet count: 14900[0m
+[0;32mI (455636) BT_AV: Audio packet count: 15000[0m
+[0;32mI (457956) BT_AV: Audio packet count: 15100[0m
+[0;32mI (460286) BT_AV: Audio packet count: 15200[0m
+[0;32mI (461196) RC_CT: AVRC event notification: 5[0m
+[0;32mI (461196) BT_AV: Play position changed: 10093-ms[0m
+[0;32mI (461376) RC_CT: AVRC event notification: 5[0m
+[0;32mI (461386) BT_AV: Play position changed: 9208-ms[0m
+[0;32mI (462596) BT_AV: Audio packet count: 15300[0m
+[0;32mI (464926) BT_AV: Audio packet count: 15400[0m
+[0;32mI (467266) BT_AV: Audio packet count: 15500[0m
+[0;32mI (469566) BT_AV: Audio packet count: 15600[0m
+[0;32mI (471516) RC_CT: AVRC event notification: 5[0m
+[0;32mI (471516) BT_AV: Play position changed: 19307-ms[0m
+[0;32mI (471896) BT_AV: Audio packet count: 15700[0m
+[0;32mI (474206) BT_AV: Audio packet count: 15800[0m
+[0;32mI (476546) BT_AV: Audio packet count: 15900[0m
+[0;32mI (478856) BT_AV: Audio packet count: 16000[0m
+[0;32mI (481186) BT_AV: Audio packet count: 16100[0m
+[0;32mI (481646) RC_CT: AVRC event notification: 5[0m
+[0;32mI (481646) BT_AV: Play position changed: 29433-ms[0m
+[0;32mI (483506) BT_AV: Audio packet count: 16200[0m
+[0;32mI (485816) BT_AV: Audio packet count: 16300[0m
+[0;32mI (488146) BT_AV: Audio packet count: 16400[0m
+[0;32mI (490456) BT_AV: Audio packet count: 16500[0m
+[0;32mI (491766) RC_CT: AVRC event notification: 5[0m
+[0;32mI (491766) BT_AV: Play position changed: 39554-ms[0m
+[0;32mI (492796) BT_AV: Audio packet count: 16600[0m
+[0;32mI (495096) BT_AV: Audio packet count: 16700[0m
+[0;32mI (497436) BT_AV: Audio packet count: 16800[0m
+[0;32mI (499766) BT_AV: Audio packet count: 16900[0m
+[0;32mI (501876) RC_CT: AVRC event notification: 5[0m
+[0;32mI (501876) BT_AV: Play position changed: 49672-ms[0m
+[0;32mI (502086) BT_AV: Audio packet count: 17000[0m
+[0;32mI (504396) BT_AV: Audio packet count: 17100[0m
+[0;32mI (506726) BT_AV: Audio packet count: 17200[0m
+[0;32mI (509036) BT_AV: Audio packet count: 17300[0m
+[0;32mI (511356) BT_AV: Audio packet count: 17400[0m
+[0;32mI (512006) RC_CT: AVRC event notification: 5[0m
+[0;32mI (512006) BT_AV: Play position changed: 59793-ms[0m
+[0;32mI (513676) BT_AV: Audio packet count: 17500[0m
+[0;32mI (516006) BT_AV: Audio packet count: 17600[0m
+[0;32mI (518336) BT_AV: Audio packet count: 17700[0m
+[0;32mI (520646) BT_AV: Audio packet count: 17800[0m
+[0;32mI (522106) RC_CT: AVRC event notification: 5[0m
+[0;32mI (522106) BT_AV: Play position changed: 69899-ms[0m
+[0;32mI (522976) BT_AV: Audio packet count: 17900[0m
+[0;32mI (525286) BT_AV: Audio packet count: 18000[0m
+[0;32mI (527616) BT_AV: Audio packet count: 18100[0m
+[0;32mI (529936) BT_AV: Audio packet count: 18200[0m
+[0;32mI (532206) RC_CT: AVRC event notification: 5[0m
+[0;32mI (532206) BT_AV: Play position changed: 79995-ms[0m
+[0;32mI (532256) BT_AV: Audio packet count: 18300[0m
+[0;32mI (534586) BT_AV: Audio packet count: 18400[0m
+[0;32mI (536916) BT_AV: Audio packet count: 18500[0m
+[0;32mI (539226) BT_AV: Audio packet count: 18600[0m
+[0;32mI (541546) BT_AV: Audio packet count: 18700[0m
+[0;32mI (542326) RC_CT: AVRC event notification: 5[0m
+[0;32mI (542326) BT_AV: Play position changed: 90107-ms[0m
+[0;32mI (543876) BT_AV: Audio packet count: 18800[0m
+[0;32mI (546196) BT_AV: Audio packet count: 18900[0m
+[0;32mI (548516) BT_AV: Audio packet count: 19000[0m
+[0;32mI (550826) BT_AV: Audio packet count: 19100[0m
+[0;32mI (552426) RC_CT: AVRC event notification: 5[0m
+[0;32mI (552426) BT_AV: Play position changed: 100229-ms[0m
+[0;32mI (553156) BT_AV: Audio packet count: 19200[0m
+[0;32mI (555476) BT_AV: Audio packet count: 19300[0m
+[0;32mI (557796) BT_AV: Audio packet count: 19400[0m
+[0;32mI (560126) BT_AV: Audio packet count: 19500[0m
+[0;32mI (562446) BT_AV: Audio packet count: 19600[0m
+[0;32mI (562556) RC_CT: AVRC event notification: 5[0m
+[0;32mI (562556) BT_AV: Play position changed: 110334-ms[0m
+[0;32mI (564766) BT_AV: Audio packet count: 19700[0m
+[0;32mI (567106) BT_AV: Audio packet count: 19800[0m
+[0;32mI (569416) BT_AV: Audio packet count: 19900[0m
+[0;32mI (571736) BT_AV: Audio packet count: 20000[0m
+[0;32mI (572676) RC_CT: AVRC event notification: 5[0m
+[0;32mI (572676) BT_AV: Play position changed: 120471-ms[0m
+[0;32mI (574066) BT_AV: Audio packet count: 20100[0m
+[0;32mI (576376) BT_AV: Audio packet count: 20200[0m
+[0;32mI (578696) BT_AV: Audio packet count: 20300[0m
+[0;32mI (581036) BT_AV: Audio packet count: 20400[0m
+[0;32mI (582786) RC_CT: AVRC event notification: 5[0m
+[0;32mI (582786) BT_AV: Play position changed: 130586-ms[0m
+[0;32mI (583336) BT_AV: Audio packet count: 20500[0m
+[0;32mI (585666) BT_AV: Audio packet count: 20600[0m
+[0;32mI (587996) BT_AV: Audio packet count: 20700[0m
+[0;32mI (590306) BT_AV: Audio packet count: 20800[0m
+[0;32mI (592626) BT_AV: Audio packet count: 20900[0m
+[0;32mI (592906) RC_CT: AVRC event notification: 5[0m
+[0;32mI (592906) BT_AV: Play position changed: 140691-ms[0m
+[0;32mI (594956) BT_AV: Audio packet count: 21000[0m
+[0;32mI (597276) BT_AV: Audio packet count: 21100[0m
+[0;32mI (599596) BT_AV: Audio packet count: 21200[0m
+[0;32mI (601936) BT_AV: Audio packet count: 21300[0m
+[0;32mI (603036) RC_CT: AVRC event notification: 5[0m
+[0;32mI (603036) BT_AV: Play position changed: 150824-ms[0m
+[0;32mI (604246) BT_AV: Audio packet count: 21400[0m
+[0;32mI (606576) BT_AV: Audio packet count: 21500[0m
+[0;32mI (608886) BT_AV: Audio packet count: 21600[0m
+[0;32mI (611216) BT_AV: Audio packet count: 21700[0m
+[0;32mI (613156) RC_CT: AVRC event notification: 5[0m
+[0;32mI (613156) BT_AV: Play position changed: 160943-ms[0m
+[0;32mI (613526) BT_AV: Audio packet count: 21800[0m
+[0;32mI (615846) BT_AV: Audio packet count: 21900[0m
+[0;32mI (618166) BT_AV: Audio packet count: 22000[0m
+[0;32mI (620496) BT_AV: Audio packet count: 22100[0m
+[0;32mI (622816) BT_AV: Audio packet count: 22200[0m
+[0;32mI (623276) RC_CT: AVRC event notification: 5[0m
+[0;32mI (623276) BT_AV: Play position changed: 171073-ms[0m
+[0;32mI (625136) BT_AV: Audio packet count: 22300[0m
+[0;32mI (627456) BT_AV: Audio packet count: 22400[0m
+[0;32mI (629796) BT_AV: Audio packet count: 22500[0m
+[0;32mI (632096) BT_AV: Audio packet count: 22600[0m
+[0;32mI (633396) RC_CT: AVRC event notification: 5[0m
+[0;32mI (633396) BT_AV: Play position changed: 181192-ms[0m
+[0;32mI (634426) BT_AV: Audio packet count: 22700[0m
+[0;32mI (636746) BT_AV: Audio packet count: 22800[0m
+[0;32mI (639066) BT_AV: Audio packet count: 22900[0m
+[0;32mI (641386) BT_AV: Audio packet count: 23000[0m
+[0;32mI (643526) RC_CT: AVRC event notification: 5[0m
+[0;32mI (643526) BT_AV: Play position changed: 191306-ms[0m
+[0;32mI (643706) BT_AV: Audio packet count: 23100[0m
+[0;32mI (646036) BT_AV: Audio packet count: 23200[0m
+[0;32mI (648366) BT_AV: Audio packet count: 23300[0m
+[0;32mI (650686) BT_AV: Audio packet count: 23400[0m
+[0;32mI (652996) BT_AV: Audio packet count: 23500[0m
+[0;32mI (653616) RC_CT: AVRC event notification: 5[0m
+[0;32mI (653616) BT_AV: Play position changed: 201421-ms[0m
+[0;32mI (655336) BT_AV: Audio packet count: 23600[0m
+[0;32mI (657646) BT_AV: Audio packet count: 23700[0m
+[0;32mI (659966) BT_AV: Audio packet count: 23800[0m
+[0;32mI (662296) BT_AV: Audio packet count: 23900[0m
+[0;32mI (663746) RC_CT: AVRC event notification: 5[0m
+[0;32mI (663746) BT_AV: Play position changed: 211533-ms[0m
+[0;32mI (664616) BT_AV: Audio packet count: 24000[0m
+[0;32mI (666956) BT_AV: Audio packet count: 24100[0m
+[0;32mI (669256) BT_AV: Audio packet count: 24200[0m
+[0;32mI (671586) BT_AV: Audio packet count: 24300[0m
+[0;32mI (673866) RC_CT: AVRC event notification: 5[0m
+[0;32mI (673866) BT_AV: Play position changed: 221663-ms[0m
+[0;32mI (673906) BT_AV: Audio packet count: 24400[0m
+[0;32mI (676236) BT_AV: Audio packet count: 24500[0m
+[0;32mI (678556) BT_AV: Audio packet count: 24600[0m
+[0;32mI (680856) BT_AV: Audio packet count: 24700[0m
+[0;32mI (683206) BT_AV: Audio packet count: 24800[0m
+[0;32mI (684006) RC_CT: AVRC event notification: 5[0m
+[0;32mI (684006) BT_AV: Play position changed: 231786-ms[0m
+[0;32mI (685516) BT_AV: Audio packet count: 24900[0m
+[0;32mI (687826) BT_AV: Audio packet count: 25000[0m
+[0;32mI (690156) BT_AV: Audio packet count: 25100[0m
+[0;32mI (692476) BT_AV: Audio packet count: 25200[0m
+[0;32mI (694116) RC_CT: AVRC event notification: 5[0m
+[0;32mI (694116) BT_AV: Play position changed: 241898-ms[0m
+[0;32mI (694816) BT_AV: Audio packet count: 25300[0m
+[0;32mI (697116) BT_AV: Audio packet count: 25400[0m
+[0;32mI (699436) BT_AV: Audio packet count: 25500[0m
+[0;32mI (701766) BT_AV: Audio packet count: 25600[0m
+[0;32mI (702936) RC_CT: AVRC event notification: 5[0m
+[0;32mI (702936) BT_AV: Play position changed: 99-ms[0m
+[0;32mI (702936) RC_CT: AVRC event notification: 2[0m
+[0;32mI (702996) RC_CT: AVRC metadata rsp: attribute id 0x1, TEXAS HOLD 'EM[0m
+[0;32mI (702996) RC_CT: AVRC metadata rsp: attribute id 0x2, Beyoncé[0m
+[0;32mI (702996) RC_CT: AVRC metadata rsp: attribute id 0x4, COWBOY CARTER[0m
+[0;32mI (704086) BT_AV: Audio packet count: 25700[0m
+[0;32mI (706426) BT_AV: Audio packet count: 25800[0m
+[0;32mI (708726) BT_AV: Audio packet count: 25900[0m
+[0;32mI (711066) BT_AV: Audio packet count: 26000[0m
+[0;32mI (713016) RC_CT: AVRC event notification: 5[0m
+[0;32mI (713016) BT_AV: Play position changed: 10183-ms[0m
+[0;32mI (713156) RC_CT: AVRC event notification: 5[0m
+[0;32mI (713156) BT_AV: Play position changed: 9051-ms[0m
+[0;32mI (713366) BT_AV: Audio packet count: 26100[0m
+[0;32mI (715696) BT_AV: Audio packet count: 26200[0m
+[0;32mI (718016) BT_AV: Audio packet count: 26300[0m
+[0;32mI (720346) BT_AV: Audio packet count: 26400[0m
+[0;32mI (722666) BT_AV: Audio packet count: 26500[0m
+[0;32mI (723236) RC_CT: AVRC event notification: 5[0m
+[0;32mI (723236) BT_AV: Play position changed: 19132-ms[0m
+[0;32mI (724996) BT_AV: Audio packet count: 26600[0m
+[0;32mI (727316) BT_AV: Audio packet count: 26700[0m
+[0;32mI (729626) BT_AV: Audio packet count: 26800[0m
+[0;32mI (731946) BT_AV: Audio packet count: 26900[0m
+[0;32mI (733336) RC_CT: AVRC event notification: 5[0m
+[0;32mI (733336) BT_AV: Play position changed: 29217-ms[0m
+[0;32mI (734276) BT_AV: Audio packet count: 27000[0m
+[0;32mI (736596) BT_AV: Audio packet count: 27100[0m
+[0;32mI (738926) BT_AV: Audio packet count: 27200[0m
+[0;32mI (741246) BT_AV: Audio packet count: 27300[0m
+[0;32mI (743456) RC_CT: AVRC event notification: 5[0m
+[0;32mI (743456) BT_AV: Play position changed: 39328-ms[0m
+[0;32mI (743556) BT_AV: Audio packet count: 27400[0m
+[0;32mI (745896) BT_AV: Audio packet count: 27500[0m
+[0;32mI (748206) BT_AV: Audio packet count: 27600[0m
+[0;32mI (750536) BT_AV: Audio packet count: 27700[0m
+[0;32mI (752846) BT_AV: Audio packet count: 27800[0m
+[0;32mI (753576) RC_CT: AVRC event notification: 5[0m
+[0;32mI (753576) BT_AV: Play position changed: 49447-ms[0m
+[0;32mI (755176) BT_AV: Audio packet count: 27900[0m
+[0;32mI (757506) BT_AV: Audio packet count: 28000[0m
+[0;32mI (759836) BT_AV: Audio packet count: 28100[0m
+[0;32mI (762126) BT_AV: Audio packet count: 28200[0m
+[0;32mI (763706) RC_CT: AVRC event notification: 5[0m
+[0;32mI (763706) BT_AV: Play position changed: 59572-ms[0m
+[0;32mI (764456) BT_AV: Audio packet count: 28300[0m
+[0;32mI (766786) BT_AV: Audio packet count: 28400[0m
+[0;32mI (769116) BT_AV: Audio packet count: 28500[0m
+[0;32mI (771436) BT_AV: Audio packet count: 28600[0m
+[0;32mI (773756) BT_AV: Audio packet count: 28700[0m
+[0;32mI (773846) RC_CT: AVRC event notification: 5[0m
+[0;32mI (773846) BT_AV: Play position changed: 69718-ms[0m
+[0;32mI (776066) BT_AV: Audio packet count: 28800[0m
+[0;32mI (778386) BT_AV: Audio packet count: 28900[0m
+[0;32mI (780706) BT_AV: Audio packet count: 29000[0m
+[0;32mI (783046) BT_AV: Audio packet count: 29100[0m
+[0;32mI (783986) RC_CT: AVRC event notification: 5[0m
+[0;32mI (783986) BT_AV: Play position changed: 79845-ms[0m
+[0;32mI (785356) BT_AV: Audio packet count: 29200[0m
+[0;32mI (787676) BT_AV: Audio packet count: 29300[0m
+[0;32mI (789996) BT_AV: Audio packet count: 29400[0m
+[0;32mI (792326) BT_AV: Audio packet count: 29500[0m
+[0;32mI (794076) RC_CT: AVRC event notification: 5[0m
+[0;32mI (794076) BT_AV: Play position changed: 89952-ms[0m
+[0;32mI (794636) BT_AV: Audio packet count: 29600[0m
+[0;32mI (796956) BT_AV: Audio packet count: 29700[0m
+[0;32mI (799286) BT_AV: Audio packet count: 29800[0m
+[0;32mI (801626) BT_AV: Audio packet count: 29900[0m
+[0;32mI (803936) BT_AV: Audio packet count: 30000[0m
+[0;32mI (804196) RC_CT: AVRC event notification: 5[0m
+[0;32mI (804196) BT_AV: Play position changed: 100069-ms[0m
+[0;32mI (806256) BT_AV: Audio packet count: 30100[0m
+[0;32mI (808566) BT_AV: Audio packet count: 30200[0m
+[0;32mI (810886) BT_AV: Audio packet count: 30300[0m
+[0;32mI (813216) BT_AV: Audio packet count: 30400[0m
+[0;32mI (814326) RC_CT: AVRC event notification: 5[0m
+[0;32mI (814326) BT_AV: Play position changed: 110187-ms[0m
+[0;32mI (815546) BT_AV: Audio packet count: 30500[0m
+[0;32mI (817876) BT_AV: Audio packet count: 30600[0m
+[0;32mI (820186) BT_AV: Audio packet count: 30700[0m
+[0;32mI (822506) BT_AV: Audio packet count: 30800[0m
+[0;32mI (824446) RC_CT: AVRC event notification: 5[0m
+[0;32mI (824446) BT_AV: Play position changed: 120328-ms[0m
+[0;32mI (824826) BT_AV: Audio packet count: 30900[0m
+[0;32mI (827166) BT_AV: Audio packet count: 31000[0m
+[0;32mI (829476) BT_AV: Audio packet count: 31100[0m
+[0;32mI (831796) BT_AV: Audio packet count: 31200[0m
+[0;32mI (834116) BT_AV: Audio packet count: 31300[0m
+[0;32mI (834556) RC_CT: AVRC event notification: 5[0m
+[0;32mI (834556) BT_AV: Play position changed: 130425-ms[0m
+[0;32mI (836436) BT_AV: Audio packet count: 31400[0m
+[0;32mI (838756) BT_AV: Audio packet count: 31500[0m
+[0;32mI (841086) BT_AV: Audio packet count: 31600[0m
+[0;32mI (843406) BT_AV: Audio packet count: 31700[0m
+[0;32mI (844656) RC_CT: AVRC event notification: 5[0m
+[0;32mI (844656) BT_AV: Play position changed: 140542-ms[0m
+[0;32mI (845726) BT_AV: Audio packet count: 31800[0m
+[0;32mI (848056) BT_AV: Audio packet count: 31900[0m
+[0;32mI (850376) BT_AV: Audio packet count: 32000[0m
+[0;32mI (852686) BT_AV: Audio packet count: 32100[0m
+[0;32mI (854786) RC_CT: AVRC event notification: 5[0m
+[0;32mI (854786) BT_AV: Play position changed: 150651-ms[0m
+[0;32mI (855026) BT_AV: Audio packet count: 32200[0m
+[0;32mI (857326) BT_AV: Audio packet count: 32300[0m
+[0;32mI (859656) BT_AV: Audio packet count: 32400[0m
+[0;32mI (861976) BT_AV: Audio packet count: 32500[0m
+[0;32mI (864316) BT_AV: Audio packet count: 32600[0m
+[0;32mI (864906) RC_CT: AVRC event notification: 5[0m
+[0;32mI (864906) BT_AV: Play position changed: 160783-ms[0m
+[0;32mI (866636) BT_AV: Audio packet count: 32700[0m
+[0;32mI (868956) BT_AV: Audio packet count: 32800[0m
+[0;32mI (871266) BT_AV: Audio packet count: 32900[0m
+[0;32mI (873596) BT_AV: Audio packet count: 33000[0m
+[0;32mI (875046) RC_CT: AVRC event notification: 5[0m
+[0;32mI (875046) BT_AV: Play position changed: 170899-ms[0m
+[0;32mI (875916) BT_AV: Audio packet count: 33100[0m
+[0;32mI (878246) BT_AV: Audio packet count: 33200[0m
+[0;32mI (880556) BT_AV: Audio packet count: 33300[0m
+[0;32mI (882876) BT_AV: Audio packet count: 33400[0m
+[0;32mI (885166) RC_CT: AVRC event notification: 5[0m
+[0;32mI (885166) BT_AV: Play position changed: 181036-ms[0m
+[0;32mI (885206) BT_AV: Audio packet count: 33500[0m
+[0;32mI (887516) BT_AV: Audio packet count: 33600[0m
+[0;32mI (889846) BT_AV: Audio packet count: 33700[0m
+[0;32mI (892166) BT_AV: Audio packet count: 33800[0m
+[0;32mI (894476) BT_AV: Audio packet count: 33900[0m
+[0;32mI (895286) RC_CT: AVRC event notification: 5[0m
+[0;32mI (895286) BT_AV: Play position changed: 191164-ms[0m
+[0;32mI (896806) BT_AV: Audio packet count: 34000[0m
+[0;32mI (899136) BT_AV: Audio packet count: 34100[0m
+[0;32mI (901456) BT_AV: Audio packet count: 34200[0m
+[0;32mI (903786) BT_AV: Audio packet count: 34300[0m
+[0;32mI (905406) RC_CT: AVRC event notification: 5[0m
+[0;32mI (905406) BT_AV: Play position changed: 201286-ms[0m
+[0;32mI (906096) BT_AV: Audio packet count: 34400[0m
+[0;32mI (908416) BT_AV: Audio packet count: 34500[0m
+[0;32mI (910736) BT_AV: Audio packet count: 34600[0m
+[0;32mI (913076) BT_AV: Audio packet count: 34700[0m
+[0;32mI (915396) BT_AV: Audio packet count: 34800[0m
+[0;32mI (915516) RC_CT: AVRC event notification: 5[0m
+[0;32mI (915516) BT_AV: Play position changed: 211393-ms[0m
+[0;32mI (917706) BT_AV: Audio packet count: 34900[0m
+[0;32mI (920026) BT_AV: Audio packet count: 35000[0m
+[0;32mI (922356) BT_AV: Audio packet count: 35100[0m
+[0;32mI (924666) BT_AV: Audio packet count: 35200[0m
+[0;32mI (925636) RC_CT: AVRC event notification: 5[0m
+[0;32mI (925636) BT_AV: Play position changed: 221507-ms[0m
+[0;32mI (927006) BT_AV: Audio packet count: 35300[0m
+[0;32mI (929326) BT_AV: Audio packet count: 35400[0m
+[0;32mI (931646) BT_AV: Audio packet count: 35500[0m
+[0;32mI (933966) BT_AV: Audio packet count: 35600[0m
+[0;32mI (935776) RC_CT: AVRC event notification: 5[0m
+[0;32mI (935776) BT_AV: Play position changed: 231635-ms[0m
+[0;32mI (936296) BT_AV: Audio packet count: 35700[0m
+[0;32mI (936936) RC_CT: AVRC event notification: 5[0m
+[0;32mI (936936) BT_AV: Play position changed: 0-ms[0m
+[0;32mI (936946) RC_CT: AVRC event notification: 2[0m
+[0;32mI (936986) RC_CT: AVRC metadata rsp: attribute id 0x1, Moen[0m
+[0;32mI (936986) RC_CT: AVRC metadata rsp: attribute id 0x2, Advertisement[0m
+[0;32mI (937186) RC_CT: AVRC event notification: 5[0m
+[0;32mI (937186) BT_AV: Play position changed: 42-ms[0m
+[0;32mI (937386) RC_CT: AVRC event notification: 2[0m
+[0;32mI (937456) RC_CT: AVRC metadata rsp: attribute id 0x1, Moen[0m
+[0;32mI (937456) RC_CT: AVRC metadata rsp: attribute id 0x2, Advertisement[0m
+[0;32mI (938606) BT_AV: Audio packet count: 35800[0m
+[0;32mI (940926) BT_AV: Audio packet count: 35900[0m
+[0;32mI (943256) BT_AV: Audio packet count: 36000[0m
+[0;32mI (945566) BT_AV: Audio packet count: 36100[0m
+[0;32mI (947276) RC_CT: AVRC event notification: 5[0m
+[0;32mI (947276) BT_AV: Play position changed: 10094-ms[0m
+[0;32mI (947896) BT_AV: Audio packet count: 36200[0m
+[0;32mI (950226) BT_AV: Audio packet count: 36300[0m
+[0;32mI (952536) BT_AV: Audio packet count: 36400[0m
+[0;32mI (954866) BT_AV: Audio packet count: 36500[0m
+[0;32mI (957186) BT_AV: Audio packet count: 36600[0m
+[0;32mI (957396) RC_CT: AVRC event notification: 5[0m
+[0;32mI (957396) BT_AV: Play position changed: 20211-ms[0m
+[0;32mI (959516) BT_AV: Audio packet count: 36700[0m
+[0;32mI (961826) BT_AV: Audio packet count: 36800[0m
+[0;32mI (964156) BT_AV: Audio packet count: 36900[0m
+[0;32mI (966466) BT_AV: Audio packet count: 37000[0m
+[0;32mI (967496) RC_CT: AVRC event notification: 5[0m
+[0;32mI (967496) BT_AV: Play position changed: 30066-ms[0m
+[0;32mI (967586) RC_CT: AVRC event notification: 2[0m
+[0;32mI (967666) RC_CT: AVRC metadata rsp: attribute id 0x1, TaxAct[0m
+[0;32mI (967666) RC_CT: AVRC metadata rsp: attribute id 0x2, Advertisement[0m
+[0;32mI (967776) RC_CT: AVRC event notification: 2[0m
+[0;32mI (967816) RC_CT: AVRC metadata rsp: attribute id 0x1, TaxAct[0m
+[0;32mI (967816) RC_CT: AVRC metadata rsp: attribute id 0x2, Advertisement[0m
+[0;32mI (968796) BT_AV: Audio packet count: 37100[0m
+[0;32mI (971126) BT_AV: Audio packet count: 37200[0m
+[0;32mI (973446) BT_AV: Audio packet count: 37300[0m
+[0;32mI (975756) BT_AV: Audio packet count: 37400[0m
+[0;32mI (977586) RC_CT: AVRC event notification: 5[0m
+[0;32mI (977586) BT_AV: Play position changed: 10048-ms[0m
+[0;32mI (978086) BT_AV: Audio packet count: 37500[0m
+[0;32mI (980406) BT_AV: Audio packet count: 37600[0m
+[0;32mI (982726) BT_AV: Audio packet count: 37700[0m
+[0;32mI (985046) BT_AV: Audio packet count: 37800[0m
+[0;32mI (987366) BT_AV: Audio packet count: 37900[0m
+[0;32mI (987716) RC_CT: AVRC event notification: 5[0m
+[0;32mI (987716) BT_AV: Play position changed: 20147-ms[0m
+[0;32mI (989686) BT_AV: Audio packet count: 38000[0m
+[0;32mI (992006) BT_AV: Audio packet count: 38100[0m
+[0;32mI (994326) BT_AV: Audio packet count: 38200[0m
+[0;32mI (996656) BT_AV: Audio packet count: 38300[0m
+[0;32mI (997786) RC_CT: AVRC event notification: 5[0m
+[0;32mI (997786) BT_AV: Play position changed: 30040-ms[0m
+[0;32mI (997876) RC_CT: AVRC event notification: 2[0m
+[0;32mI (997936) RC_CT: AVRC metadata rsp: attribute id 0x1, Edward Jones[0m
+[0;32mI (997936) RC_CT: AVRC metadata rsp: attribute id 0x2, Advertisement[0m
+[0;32mI (998976) BT_AV: Audio packet count: 38400[0m
+[0;32mI (1001296) BT_AV: Audio packet count: 38500[0m
+[0;32mI (1003626) BT_AV: Audio packet count: 38600[0m
+[0;32mI (1005936) BT_AV: Audio packet count: 38700[0m
+[0;32mI (1007896) RC_CT: AVRC event notification: 5[0m
+[0;32mI (1007896) BT_AV: Play position changed: 10083-ms[0m
+[0;32mI (1008276) BT_AV: Audio packet count: 38800[0m
+[0;32mI (1010586) BT_AV: Audio packet count: 38900[0m
+[0;32mI (1012906) BT_AV: Audio packet count: 39000[0m
+[0;32mI (1015236) BT_AV: Audio packet count: 39100[0m
+[0;32mI (1017556) BT_AV: Audio packet count: 39200[0m
+[0;32mI (1018026) RC_CT: AVRC event notification: 5[0m
+[0;32mI (1018026) BT_AV: Play position changed: 20190-ms[0m
+[0;32mI (1019866) BT_AV: Audio packet count: 39300[0m
+[0;32mI (1022196) BT_AV: Audio packet count: 39400[0m
+[0;32mI (1024516) BT_AV: Audio packet count: 39500[0m
+[0;32mI (1026856) BT_AV: Audio packet count: 39600[0m
+[0;32mI (1028146) RC_CT: AVRC event notification: 5[0m
+[0;32mI (1028146) BT_AV: Play position changed: 30093-ms[0m
+[0;32mI (1028776) RC_CT: AVRC event notification: 2[0m
+[0;32mI (1028836) RC_CT: AVRC metadata rsp: attribute id 0x1, JOLENE[0m
+[0;32mI (1028836) RC_CT: AVRC metadata rsp: attribute id 0x2, Beyoncé[0m
+[0;32mI (1028836) RC_CT: AVRC metadata rsp: attribute id 0x4, COWBOY CARTER[0m
+[0;32mI (1029156) BT_AV: Audio packet count: 39700[0m
+[0;32mI (1031486) BT_AV: Audio packet count: 39800[0m
+[0;32mI (1033816) BT_AV: Audio packet count: 39900[0m
+[0;32mI (1036126) BT_AV: Audio packet count: 40000[0m
+[0;32mI (1038256) RC_CT: AVRC event notification: 5[0m
+[0;32mI (1038256) BT_AV: Play position changed: 9530-ms[0m
+[0;32mI (1038456) BT_AV: Audio packet count: 40100[0m
+[0;32mI (1039016) RC_CT: AVRC event notification: 5[0m
+[0;32mI (1039016) BT_AV: Play position changed: 9259-ms[0m
+[0;32mI (1040766) BT_AV: Audio packet count: 40200[0m
+[0;32mI (1043086) BT_AV: Audio packet count: 40300[0m
+[0;32mI (1045406) BT_AV: Audio packet count: 40400[0m
+[0;32mI (1047746) BT_AV: Audio packet count: 40500[0m
+[0;32mI (1049126) RC_CT: AVRC event notification: 5[0m
+[0;32mI (1049126) BT_AV: Play position changed: 19337-ms[0m
+[0;32mI (1050056) BT_AV: Audio packet count: 40600[0m
+[0;32mI (1052376) BT_AV: Audio packet count: 40700[0m
+[0;32mI (1054716) BT_AV: Audio packet count: 40800[0m
+[0;32mI (1057016) BT_AV: Audio packet count: 40900[0m
+[0;32mI (1059266) RC_CT: AVRC event notification: 5[0m
+[0;32mI (1059266) BT_AV: Play position changed: 29450-ms[0m
+[0;32mI (1059346) BT_AV: Audio packet count: 41000[0m
+[0;32mI (1061686) BT_AV: Audio packet count: 41100[0m
+[0;32mI (1063996) BT_AV: Audio packet count: 41200[0m
+[0;32mI (1066336) BT_AV: Audio packet count: 41300[0m
+[0;32mI (1068626) BT_AV: Audio packet count: 41400[0m
+[0;32mI (1069396) RC_CT: AVRC event notification: 5[0m
+[0;32mI (1069396) BT_AV: Play position changed: 39601-ms[0m
+[0;32mI (1070966) BT_AV: Audio packet count: 41500[0m
+[0;32mI (1073286) BT_AV: Audio packet count: 41600[0m
+[0;32mI (1075606) BT_AV: Audio packet count: 41700[0m
+[0;32mI (1077926) BT_AV: Audio packet count: 41800[0m
+[0;32mI (1079526) RC_CT: AVRC event notification: 5[0m
+[0;32mI (1079526) BT_AV: Play position changed: 49725-ms[0m
+[0;32mI (1080256) BT_AV: Audio packet count: 41900[0m
+[0;32mI (1082586) BT_AV: Audio packet count: 42000[0m
+[0;32mI (1084886) BT_AV: Audio packet count: 42100[0m
+[0;32mI (1087226) BT_AV: Audio packet count: 42200[0m
+[0;32mI (1089536) BT_AV: Audio packet count: 42300[0m
+[0;32mI (1089646) RC_CT: AVRC event notification: 5[0m
+[0;32mI (1089646) BT_AV: Play position changed: 59855-ms[0m
+[0;32mI (1091856) BT_AV: Audio packet count: 42400[0m
+[0;32mI (1094176) BT_AV: Audio packet count: 42500[0m
+[0;32mI (1096496) BT_AV: Audio packet count: 42600[0m
+[0;32mI (1098836) BT_AV: Audio packet count: 42700[0m
+[0;32mI (1099776) RC_CT: AVRC event notification: 5[0m
+[0;32mI (1099776) BT_AV: Play position changed: 69974-ms[0m
+[0;32mI (1101136) BT_AV: Audio packet count: 42800[0m
+[0;32mI (1103476) BT_AV: Audio packet count: 42900[0m
+[0;32mI (1105776) BT_AV: Audio packet count: 43000[0m
+[0;32mI (1108106) BT_AV: Audio packet count: 43100[0m
+[0;32mI (1109896) RC_CT: AVRC event notification: 5[0m
+[0;32mI (1109896) BT_AV: Play position changed: 80101-ms[0m
+[0;32mI (1110426) BT_AV: Audio packet count: 43200[0m
+[0;32mI (1112746) BT_AV: Audio packet count: 43300[0m
+[0;32mI (1115076) BT_AV: Audio packet count: 43400[0m
+[0;32mI (1117396) BT_AV: Audio packet count: 43500[0m
+[0;32mI (1119726) BT_AV: Audio packet count: 43600[0m
+[0;32mI (1120036) RC_CT: AVRC event notification: 5[0m
+[0;32mI (1120036) BT_AV: Play position changed: 90237-ms[0m
+[0;32mI (1122036) BT_AV: Audio packet count: 43700[0m
+[0;32mI (1124376) BT_AV: Audio packet count: 43800[0m
+[0;32mI (1126696) BT_AV: Audio packet count: 43900[0m
+[0;32mI (1128996) BT_AV: Audio packet count: 44000[0m
+[0;32mI (1130166) RC_CT: AVRC event notification: 5[0m
+[0;32mI (1130166) BT_AV: Play position changed: 100377-ms[0m
+[0;32mI (1131336) BT_AV: Audio packet count: 44100[0m
+[0;32mI (1133656) BT_AV: Audio packet count: 44200[0m
+[0;32mI (1135986) BT_AV: Audio packet count: 44300[0m
+[0;32mI (1138306) BT_AV: Audio packet count: 44400[0m
+[0;32mI (1140286) RC_CT: AVRC event notification: 5[0m
+[0;32mI (1140286) BT_AV: Play position changed: 110502-ms[0m
+[0;32mI (1140616) BT_AV: Audio packet count: 44500[0m
+[0;32mI (1142946) BT_AV: Audio packet count: 44600[0m
+[0;32mI (1145276) BT_AV: Audio packet count: 44700[0m
+[0;32mI (1147596) BT_AV: Audio packet count: 44800[0m
+[0;32mI (1149906) BT_AV: Audio packet count: 44900[0m
+[0;32mI (1150406) RC_CT: AVRC event notification: 5[0m
+[0;32mI (1150406) BT_AV: Play position changed: 120616-ms[0m
+[0;32mI (1152226) BT_AV: Audio packet count: 45000[0m
+[0;32mI (1154546) BT_AV: Audio packet count: 45100[0m
+[0;32mI (1156876) BT_AV: Audio packet count: 45200[0m
+[0;32mI (1159206) BT_AV: Audio packet count: 45300[0m
+[0;32mI (1160526) RC_CT: AVRC event notification: 5[0m
+[0;32mI (1160526) BT_AV: Play position changed: 130735-ms[0m
+[0;32mI (1161516) BT_AV: Audio packet count: 45400[0m
+[0;32mI (1163836) BT_AV: Audio packet count: 45500[0m
+[0;32mI (1166156) BT_AV: Audio packet count: 45600[0m
+[0;32mI (1168476) BT_AV: Audio packet count: 45700[0m
+[0;32mI (1170626) RC_CT: AVRC event notification: 5[0m
+[0;32mI (1170626) BT_AV: Play position changed: 140834-ms[0m
+[0;32mI (1170796) BT_AV: Audio packet count: 45800[0m
+[0;32mI (1173116) BT_AV: Audio packet count: 45900[0m
+[0;32mI (1175446) BT_AV: Audio packet count: 46000[0m
+[0;32mI (1177766) BT_AV: Audio packet count: 46100[0m
+[0;32mI (1180096) BT_AV: Audio packet count: 46200[0m
+[0;32mI (1180716) RC_CT: AVRC event notification: 5[0m
+[0;32mI (1180716) BT_AV: Play position changed: 150931-ms[0m
+[0;32mI (1182406) BT_AV: Audio packet count: 46300[0m
+[0;32mI (1184726) BT_AV: Audio packet count: 46400[0m
+[0;32mI (1187066) BT_AV: Audio packet count: 46500[0m
+[0;32mI (1189376) BT_AV: Audio packet count: 46600[0m
+[0;32mI (1190836) RC_CT: AVRC event notification: 5[0m
+[0;32mI (1190836) BT_AV: Play position changed: 161045-ms[0m
+[0;32mI (1191706) BT_AV: Audio packet count: 46700[0m
+[0;32mI (1194016) BT_AV: Audio packet count: 46800[0m
+[0;32mI (1196356) BT_AV: Audio packet count: 46900[0m
+[0;32mI (1198666) BT_AV: Audio packet count: 47000[0m
+[0;32mI (1200946) RC_CT: AVRC event notification: 5[0m
+[0;32mI (1200946) BT_AV: Play position changed: 171162-ms[0m
+[0;32mI (1200986) BT_AV: Audio packet count: 47100[0m
+[0;32mI (1203316) BT_AV: Audio packet count: 47200[0m
+[0;32mI (1205646) BT_AV: Audio packet count: 47300[0m
+[0;32mI (1207956) BT_AV: Audio packet count: 47400[0m
+[0;32mI (1210276) BT_AV: Audio packet count: 47500[0m
+[0;32mI (1211056) RC_CT: AVRC event notification: 5[0m
+[0;32mI (1211056) BT_AV: Play position changed: 181278-ms[0m
+[0;32mI (1212616) BT_AV: Audio packet count: 47600[0m
+[0;32mI (1214936) BT_AV: Audio packet count: 47700[0m
+[0;32mI (1217256) BT_AV: Audio packet count: 47800[0m
+[0;32mI (1218706) RC_CT: AVRC event notification: 5[0m
+[0;32mI (1218706) BT_AV: Play position changed: 115-ms[0m
+[0;32mI (1218706) RC_CT: AVRC event notification: 2[0m
+[0;32mI (1218766) RC_CT: AVRC metadata rsp: attribute id 0x1, II MOST WANTED[0m
+[0;32mI (1218766) RC_CT: AVRC metadata rsp: attribute id 0x2, Beyoncé, Miley Cyrus[0m
+[0;32mI (1218776) RC_CT: AVRC metadata rsp: attribute id 0x4, COWBOY CARTER[0m
+[0;32mI (1219566) BT_AV: Audio packet count: 47900[0m
+[0;32mI (1221896) BT_AV: Audio packet count: 48000[0m
+[0;32mI (1224216) BT_AV: Audio packet count: 48100[0m
+[0;32mI (1226546) BT_AV: Audio packet count: 48200[0m
+[0;32mI (1228796) RC_CT: AVRC event notification: 5[0m
+[0;32mI (1228796) BT_AV: Play position changed: 10195-ms[0m
+[0;32mI (1228846) BT_AV: Audio packet count: 48300[0m
+[0;32mI (1228926) RC_CT: AVRC event notification: 5[0m
+[0;32mI (1228926) BT_AV: Play position changed: 9031-ms[0m
+[0;32mI (1231176) BT_AV: Audio packet count: 48400[0m
+[0;32mI (1233506) BT_AV: Audio packet count: 48500[0m
+[0;32mI (1235826) BT_AV: Audio packet count: 48600[0m
+[0;32mI (1238146) BT_AV: Audio packet count: 48700[0m
+[0;32mI (1239036) RC_CT: AVRC event notification: 5[0m
+[0;32mI (1239036) BT_AV: Play position changed: 19118-ms[0m
+[0;32mI (1240466) BT_AV: Audio packet count: 48800[0m
+[0;32mI (1242796) BT_AV: Audio packet count: 48900[0m
+[0;32mI (1245106) BT_AV: Audio packet count: 49000[0m
+[0;32mI (1247426) BT_AV: Audio packet count: 49100[0m
+[0;32mI (1249166) RC_CT: AVRC event notification: 5[0m
+[0;32mI (1249166) BT_AV: Play position changed: 29233-ms[0m
+[0;32mI (1249746) BT_AV: Audio packet count: 49200[0m
+[0;32mI (1252066) BT_AV: Audio packet count: 49300[0m
+[0;32mI (1254396) BT_AV: Audio packet count: 49400[0m
+[0;32mI (1256726) BT_AV: Audio packet count: 49500[0m
+[0;32mI (1259046) BT_AV: Audio packet count: 49600[0m
+[0;32mI (1259286) RC_CT: AVRC event notification: 5[0m
+[0;32mI (1259286) BT_AV: Play position changed: 39369-ms[0m
+[0;32mI (1261356) BT_AV: Audio packet count: 49700[0m
+[0;32mI (1263676) BT_AV: Audio packet count: 49800[0m
+[0;32mI (1266006) BT_AV: Audio packet count: 49900[0m
+[0;32mI (1268316) BT_AV: Audio packet count: 50000[0m
+[0;32mI (1269396) RC_CT: AVRC event notification: 5[0m
+[0;32mI (1269396) BT_AV: Play position changed: 49478-ms[0m
+[0;32mI (1270646) BT_AV: Audio packet count: 50100[0m
+[0;32mI (1272966) BT_AV: Audio packet count: 50200[0m
+[0;32mI (1275286) BT_AV: Audio packet count: 50300[0m
+[0;32mI (1277616) BT_AV: Audio packet count: 50400[0m
+[0;32mI (1279496) RC_CT: AVRC event notification: 5[0m
+[0;32mI (1279496) BT_AV: Play position changed: 59579-ms[0m
+[0;32mI (1279946) BT_AV: Audio packet count: 50500[0m
+[0;32mI (1282266) BT_AV: Audio packet count: 50600[0m
+[0;32mI (1284596) BT_AV: Audio packet count: 50700[0m
+[0;32mI (1286896) BT_AV: Audio packet count: 50800[0m
+[0;32mI (1289216) BT_AV: Audio packet count: 50900[0m
+[0;32mI (1289616) RC_CT: AVRC event notification: 5[0m
+[0;32mI (1289616) BT_AV: Play position changed: 69695-ms[0m
+[0;32mI (1291536) BT_AV: Audio packet count: 51000[0m
+[0;32mI (1293876) BT_AV: Audio packet count: 51100[0m
+[0;32mI (1296186) BT_AV: Audio packet count: 51200[0m
+[0;32mI (1298516) BT_AV: Audio packet count: 51300[0m
+[0;32mI (1299726) RC_CT: AVRC event notification: 5[0m
+[0;32mI (1299726) BT_AV: Play position changed: 79813-ms[0m
+[0;32mI (1300826) BT_AV: Audio packet count: 51400[0m
+[0;32mI (1303156) BT_AV: Audio packet count: 51500[0m
+[0;32mI (1305486) BT_AV: Audio packet count: 51600[0m
+[0;32mI (1307806) BT_AV: Audio packet count: 51700[0m
+[0;32mI (1309856) RC_CT: AVRC event notification: 5[0m
+[0;32mI (1309856) BT_AV: Play position changed: 89926-ms[0m
+[0;32mI (1310126) BT_AV: Audio packet count: 51800[0m
+[0;32mI (1312436) BT_AV: Audio packet count: 51900[0m
+[0;32mI (1314766) BT_AV: Audio packet count: 52000[0m
+[0;32mI (1317086) BT_AV: Audio packet count: 52100[0m
+[0;32mI (1319416) BT_AV: Audio packet count: 52200[0m
+[0;32mI (1319996) RC_CT: AVRC event notification: 5[0m
+[0;32mI (1319996) BT_AV: Play position changed: 100060-ms[0m
+[0;32mI (1321736) BT_AV: Audio packet count: 52300[0m
+[0;32mI (1324046) BT_AV: Audio packet count: 52400[0m
+[0;32mI (1326386) BT_AV: Audio packet count: 52500[0m
+[0;32mI (1328696) BT_AV: Audio packet count: 52600[0m
+[0;32mI (1330116) RC_CT: AVRC event notification: 5[0m
+[0;32mI (1330116) BT_AV: Play position changed: 110196-ms[0m
+[0;32mI (1331016) BT_AV: Audio packet count: 52700[0m
+[0;32mI (1333356) BT_AV: Audio packet count: 52800[0m
+[0;32mI (1335666) BT_AV: Audio packet count: 52900[0m
+[0;32mI (1337996) BT_AV: Audio packet count: 53000[0m
+[0;32mI (1340236) RC_CT: AVRC event notification: 5[0m
+[0;32mI (1340236) BT_AV: Play position changed: 120313-ms[0m
+[0;32mI (1340306) BT_AV: Audio packet count: 53100[0m
+[0;32mI (1342626) BT_AV: Audio packet count: 53200[0m
+[0;32mI (1344946) BT_AV: Audio packet count: 53300[0m
+[0;32mI (1347286) BT_AV: Audio packet count: 53400[0m
+[0;32mI (1349606) BT_AV: Audio packet count: 53500[0m
+[0;32mI (1350356) RC_CT: AVRC event notification: 5[0m
+[0;32mI (1350356) BT_AV: Play position changed: 130436-ms[0m
+[0;32mI (1351916) BT_AV: Audio packet count: 53600[0m
+[0;32mI (1354236) BT_AV: Audio packet count: 53700[0m
+[0;32mI (1356556) BT_AV: Audio packet count: 53800[0m
+[0;32mI (1358886) BT_AV: Audio packet count: 53900[0m
+[0;32mI (1360476) RC_CT: AVRC event notification: 5[0m
+[0;32mI (1360486) BT_AV: Play position changed: 140550-ms[0m
+[0;32mI (1361216) BT_AV: Audio packet count: 54000[0m
+[0;32mI (1363516) BT_AV: Audio packet count: 54100[0m
+[0;32mI (1365856) BT_AV: Audio packet count: 54200[0m
+[0;32mI (1368176) BT_AV: Audio packet count: 54300[0m
+[0;32mI (1370496) BT_AV: Audio packet count: 54400[0m
+[0;32mI (1370616) RC_CT: AVRC event notification: 5[0m
+[0;32mI (1370616) BT_AV: Play position changed: 150686-ms[0m
+[0;32mI (1372816) BT_AV: Audio packet count: 54500[0m
+[0;32mI (1375156) BT_AV: Audio packet count: 54600[0m
+[0;32mI (1377466) BT_AV: Audio packet count: 54700[0m
+[0;32mI (1379776) BT_AV: Audio packet count: 54800[0m
+[0;32mI (1380726) RC_CT: AVRC event notification: 5[0m
+[0;32mI (1380726) BT_AV: Play position changed: 160799-ms[0m
+[0;32mI (1382116) BT_AV: Audio packet count: 54900[0m
+[0;32mI (1384436) BT_AV: Audio packet count: 55000[0m
+[0;32mI (1386736) BT_AV: Audio packet count: 55100[0m
+[0;32mI (1389076) BT_AV: Audio packet count: 55200[0m
+[0;32mI (1390866) RC_CT: AVRC event notification: 5[0m
+[0;32mI (1390866) BT_AV: Play position changed: 170933-ms[0m
+[0;32mI (1391386) BT_AV: Audio packet count: 55300[0m
+[0;32mI (1393706) BT_AV: Audio packet count: 55400[0m
+[0;32mI (1396046) BT_AV: Audio packet count: 55500[0m
+[0;32mI (1398356) BT_AV: Audio packet count: 55600[0m
+[0;32mI (1400696) BT_AV: Audio packet count: 55700[0m
+[0;32mI (1400976) RC_CT: AVRC event notification: 5[0m
+[0;32mI (1400976) BT_AV: Play position changed: 181053-ms[0m
+[0;32mI (1403006) BT_AV: Audio packet count: 55800[0m
+[0;32mI (1405326) BT_AV: Audio packet count: 55900[0m
+[0;32mI (1407656) BT_AV: Audio packet count: 56000[0m
+[0;32mI (1409956) BT_AV: Audio packet count: 56100[0m
+[0;32mI (1411106) RC_CT: AVRC event notification: 5[0m
+[0;32mI (1411106) BT_AV: Play position changed: 191185-ms[0m
+[0;32mI (1412296) BT_AV: Audio packet count: 56200[0m
+[0;32mI (1414606) BT_AV: Audio packet count: 56300[0m
+[0;32mI (1416936) BT_AV: Audio packet count: 56400[0m
+[0;32mI (1419256) BT_AV: Audio packet count: 56500[0m
+[0;32mI (1421206) RC_CT: AVRC event notification: 5[0m
+[0;32mI (1421206) BT_AV: Play position changed: 201299-ms[0m
+[0;32mI (1421586) BT_AV: Audio packet count: 56600[0m
+[0;32mI (1423896) BT_AV: Audio packet count: 56700[0m
+[0;32mI (1426216) BT_AV: Audio packet count: 56800[0m
+[0;32mI (1427886) RC_CT: AVRC event notification: 5[0m
+[0;32mI (1427886) BT_AV: Play position changed: 66-ms[0m
+[0;32mI (1427926) RC_CT: AVRC event notification: 2[0m
+[0;32mI (1427946) RC_CT: AVRC metadata rsp: attribute id 0x1, Sensodyne[0m
+[0;32mI (1427946) RC_CT: AVRC metadata rsp: attribute id 0x2, Advertisement[0m
+[0;32mI (1428536) BT_AV: Audio packet count: 56900[0m
+[0;32mI (1430876) BT_AV: Audio packet count: 57000[0m
+[0;32mI (1433186) BT_AV: Audio packet count: 57100[0m
+[0;32mI (1435506) BT_AV: Audio packet count: 57200[0m
+[0;32mI (1437826) BT_AV: Audio packet count: 57300[0m
+[0;32mI (1437986) RC_CT: AVRC event notification: 5[0m
+[0;32mI (1437986) BT_AV: Play position changed: 10130-ms[0m
+[0;32mI (1440156) BT_AV: Audio packet count: 57400[0m
+[0;32mI (1442466) BT_AV: Audio packet count: 57500[0m
+[0;32mI (1444796) BT_AV: Audio packet count: 57600[0m
+[0;32mI (1447126) BT_AV: Audio packet count: 57700[0m
+[0;32mI (1448086) RC_CT: AVRC event notification: 5[0m
+[0;32mI (1448086) BT_AV: Play position changed: 20229-ms[0m
+[0;32mI (1449436) BT_AV: Audio packet count: 57800[0m
+[0;32mI (1451756) BT_AV: Audio packet count: 57900[0m
+[0;32mI (1454076) BT_AV: Audio packet count: 58000[0m
+[0;32mI (1456396) BT_AV: Audio packet count: 58100[0m
+[0;32mI (1458196) RC_CT: AVRC event notification: 5[0m
+[0;32mI (1458196) BT_AV: Play position changed: 30096-ms[0m
+[0;32mI (1458546) RC_CT: AVRC event notification: 2[0m
+[0;32mI (1458606) RC_CT: AVRC metadata rsp: attribute id 0x1, TaxAct[0m
+[0;32mI (1458606) RC_CT: AVRC metadata rsp: attribute id 0x2, Advertisement[0m
+[0;32mI (1458736) BT_AV: Audio packet count: 58200[0m
+[0;32mI (1461046) BT_AV: Audio packet count: 58300[0m
+[0;32mI (1463386) BT_AV: Audio packet count: 58400[0m
+[0;32mI (1465696) BT_AV: Audio packet count: 58500[0m
+[0;32mI (1468016) BT_AV: Audio packet count: 58600[0m
+[0;32mI (1468296) RC_CT: AVRC event notification: 5[0m
+[0;32mI (1468296) BT_AV: Play position changed: 9790-ms[0m
+[0;32mI (1468826) RC_CT: AVRC event notification: 5[0m
+[0;32mI (1468826) BT_AV: Play position changed: 9323-ms[0m
+[0;32mI (1470336) BT_AV: Audio packet count: 58700[0m
+[0;32mI (1472666) BT_AV: Audio packet count: 58800[0m
+[0;32mI (1474986) BT_AV: Audio packet count: 58900[0m
+[0;32mI (1477316) BT_AV: Audio packet count: 59000[0m
+[0;32mI (1478946) RC_CT: AVRC event notification: 5[0m
+[0;32mI (1478946) BT_AV: Play position changed: 19405-ms[0m
+[0;32mI (1479626) BT_AV: Audio packet count: 59100[0m
+[0;32mI (1481946) BT_AV: Audio packet count: 59200[0m
+[0;32mI (1484286) BT_AV: Audio packet count: 59300[0m
+[0;32mI (1486586) BT_AV: Audio packet count: 59400[0m
+[0;32mI (1488736) RC_CT: AVRC event notification: 5[0m
+[0;32mI (1488736) BT_AV: Play position changed: 66-ms[0m
+[0;32mI (1488736) RC_CT: AVRC event notification: 2[0m
+[0;32mI (1488796) RC_CT: AVRC metadata rsp: attribute id 0x1, Uber Eats[0m
+[0;32mI (1488796) RC_CT: AVRC metadata rsp: attribute id 0x2, Advertisement[0m
+[0;32mI (1488916) BT_AV: Audio packet count: 59500[0m
+[0;32mI (1491236) BT_AV: Audio packet count: 59600[0m
+[0;32mI (1493556) BT_AV: Audio packet count: 59700[0m
+[0;32mI (1495886) BT_AV: Audio packet count: 59800[0m
+[0;32mI (1498206) BT_AV: Audio packet count: 59900[0m
+[0;32mI (1498826) RC_CT: AVRC event notification: 5[0m
+[0;32mI (1498826) BT_AV: Play position changed: 10141-ms[0m
+[0;32mI (1500536) BT_AV: Audio packet count: 60000[0m
+[0;32mI (1502846) BT_AV: Audio packet count: 60100[0m
+[0;32mI (1505166) BT_AV: Audio packet count: 60200[0m
+[0;32mI (1507506) BT_AV: Audio packet count: 60300[0m
+[0;32mI (1508946) RC_CT: AVRC event notification: 5[0m
+[0;32mI (1508946) BT_AV: Play position changed: 20247-ms[0m
+[0;32mI (1509826) BT_AV: Audio packet count: 60400[0m
+[0;32mI (1512136) BT_AV: Audio packet count: 60500[0m
+[0;32mI (1514446) BT_AV: Audio packet count: 60600[0m
+[0;32mI (1516776) BT_AV: Audio packet count: 60700[0m
+[0;32mI (1519056) RC_CT: AVRC event notification: 5[0m
+[0;32mI (1519056) BT_AV: Play position changed: 30093-ms[0m
+[0;32mI (1519096) BT_AV: Audio packet count: 60800[0m
+[0;32mI (1519406) RC_CT: AVRC event notification: 5[0m
+[0;32mI (1519406) BT_AV: Play position changed: 35-ms[0m
+[0;32mI (1519446) RC_CT: AVRC event notification: 2[0m
+[0;32mI (1519486) RC_CT: AVRC metadata rsp: attribute id 0x1, CARNIVAL[0m
+[0;32mI (1519486) RC_CT: AVRC metadata rsp: attribute id 0x2, ¥$, Kanye West, Ty Dolla $ign, Rich The Kid, Playboi Carti[0m
+[0;32mI (1519486) RC_CT: AVRC metadata rsp: attribute id 0x4, VULTURES 1[0m
+[0;32mI (1521426) BT_AV: Audio packet count: 60900[0m
+[0;32mI (1523746) BT_AV: Audio packet count: 61000[0m
+[0;32mI (1526076) BT_AV: Audio packet count: 61100[0m
+[0;32mI (1528386) BT_AV: Audio packet count: 61200[0m
+[0;32mI (1529516) RC_CT: AVRC event notification: 5[0m
+[0;32mI (1529516) BT_AV: Play position changed: 10095-ms[0m
+[0;32mI (1530706) BT_AV: Audio packet count: 61300[0m
+[0;32mI (1533036) BT_AV: Audio packet count: 61400[0m
+[0;32mI (1535356) BT_AV: Audio packet count: 61500[0m
+[0;32mI (1537676) BT_AV: Audio packet count: 61600[0m
+[0;32mI (1539636) RC_CT: AVRC event notification: 5[0m
+[0;32mI (1539636) BT_AV: Play position changed: 20227-ms[0m
+[0;32mI (1539996) BT_AV: Audio packet count: 61700[0m
+[0;32mI (1542316) BT_AV: Audio packet count: 61800[0m
+[0;32mI (1544646) BT_AV: Audio packet count: 61900[0m
+[0;32mI (1546966) BT_AV: Audio packet count: 62000[0m
+[0;32mI (1549286) BT_AV: Audio packet count: 62100[0m
+[0;32mI (1549746) RC_CT: AVRC event notification: 5[0m
+[0;32mI (1549746) BT_AV: Play position changed: 30341-ms[0m
+[0;32mI (1551596) BT_AV: Audio packet count: 62200[0m
+[0;32mI (1553926) BT_AV: Audio packet count: 62300[0m
+[0;32mI (1556246) BT_AV: Audio packet count: 62400[0m
+[0;32mI (1558576) BT_AV: Audio packet count: 62500[0m
+[0;32mI (1559866) RC_CT: AVRC event notification: 5[0m
+[0;32mI (1559866) BT_AV: Play position changed: 40455-ms[0m
+[0;32mI (1560886) BT_AV: Audio packet count: 62600[0m
+[0;32mI (1563216) BT_AV: Audio packet count: 62700[0m
+[0;32mI (1565546) BT_AV: Audio packet count: 62800[0m
+[0;32mI (1567876) BT_AV: Audio packet count: 62900[0m
+[0;32mI (1569976) RC_CT: AVRC event notification: 5[0m
+[0;32mI (1569976) BT_AV: Play position changed: 50568-ms[0m
+[0;32mI (1570186) BT_AV: Audio packet count: 63000[0m
+[0;32mI (1572496) BT_AV: Audio packet count: 63100[0m
+[0;32mI (1574816) BT_AV: Audio packet count: 63200[0m
+[0;32mI (1577146) BT_AV: Audio packet count: 63300[0m
+[0;32mI (1579476) BT_AV: Audio packet count: 63400[0m
+[0;32mI (1580066) RC_CT: AVRC event notification: 5[0m
+[0;32mI (1580066) BT_AV: Play position changed: 60673-ms[0m
+[0;32mI (1581786) BT_AV: Audio packet count: 63500[0m
+[0;32mI (1584126) BT_AV: Audio packet count: 63600[0m
+[0;32mI (1586446) BT_AV: Audio packet count: 63700[0m
+[0;32mI (1588756) BT_AV: Audio packet count: 63800[0m
+[0;32mI (1590176) RC_CT: AVRC event notification: 5[0m
+[0;32mI (1590186) BT_AV: Play position changed: 70769-ms[0m
+[0;32mI (1591096) BT_AV: Audio packet count: 63900[0m
+[0;32mI (1593416) BT_AV: Audio packet count: 64000[0m
+[0;32mI (1595726) BT_AV: Audio packet count: 64100[0m
+[0;32mI (1598046) BT_AV: Audio packet count: 64200[0m
+[0;32mI (1600316) RC_CT: AVRC event notification: 5[0m
+[0;32mI (1600316) BT_AV: Play position changed: 80888-ms[0m
+[0;32mI (1600386) BT_AV: Audio packet count: 64300[0m
+[0;32mI (1602686) BT_AV: Audio packet count: 64400[0m
+[0;32mI (1605006) BT_AV: Audio packet count: 64500[0m
+[0;32mI (1607336) BT_AV: Audio packet count: 64600[0m
+[0;32mI (1609656) BT_AV: Audio packet count: 64700[0m
+[0;32mI (1610446) RC_CT: AVRC event notification: 5[0m
+[0;32mI (1610446) BT_AV: Play position changed: 91022-ms[0m
+[0;32mI (1611986) BT_AV: Audio packet count: 64800[0m
+[0;32mI (1614316) BT_AV: Audio packet count: 64900[0m
+[0;32mI (1616636) BT_AV: Audio packet count: 65000[0m
+[0;32mI (1618946) BT_AV: Audio packet count: 65100[0m
+[0;32mI (1620576) RC_CT: AVRC event notification: 5[0m
+[0;32mI (1620576) BT_AV: Play position changed: 101158-ms[0m
+[0;32mI (1621266) BT_AV: Audio packet count: 65200[0m
+[0;32mI (1623596) BT_AV: Audio packet count: 65300[0m
+[0;32mI (1625926) BT_AV: Audio packet count: 65400[0m
+[0;32mI (1628246) BT_AV: Audio packet count: 65500[0m
+[0;32mI (1630546) BT_AV: Audio packet count: 65600[0m
+[0;32mI (1630706) RC_CT: AVRC event notification: 5[0m
+[0;32mI (1630706) BT_AV: Play position changed: 111289-ms[0m
+[0;32mI (1632876) BT_AV: Audio packet count: 65700[0m
+[0;32mI (1635196) BT_AV: Audio packet count: 65800[0m
+[0;32mI (1637526) BT_AV: Audio packet count: 65900[0m
+[0;32mI (1639846) BT_AV: Audio packet count: 66000[0m
+[0;32mI (1640856) RC_CT: AVRC event notification: 5[0m
+[0;32mI (1640856) BT_AV: Play position changed: 121423-ms[0m
+[0;32mI (1642186) BT_AV: Audio packet count: 66100[0m
+[0;32mI (1644486) BT_AV: Audio packet count: 66200[0m
+[0;32mI (1646816) BT_AV: Audio packet count: 66300[0m
+[0;32mI (1649126) BT_AV: Audio packet count: 66400[0m
+[0;32mI (1650996) RC_CT: AVRC event notification: 5[0m
+[0;32mI (1650996) BT_AV: Play position changed: 131565-ms[0m
+[0;32mI (1651466) BT_AV: Audio packet count: 66500[0m
+[0;32mI (1653766) BT_AV: Audio packet count: 66600[0m
+[0;32mI (1656106) BT_AV: Audio packet count: 66700[0m
+[0;32mI (1658416) BT_AV: Audio packet count: 66800[0m
+[0;32mI (1660746) BT_AV: Audio packet count: 66900[0m
+[0;32mI (1661126) RC_CT: AVRC event notification: 5[0m
+[0;32mI (1661126) BT_AV: Play position changed: 141703-ms[0m
+[0;32mI (1663056) BT_AV: Audio packet count: 67000[0m
+[0;32mI (1665386) BT_AV: Audio packet count: 67100[0m
+[0;32mI (1667706) BT_AV: Audio packet count: 67200[0m
+[0;32mI (1670026) BT_AV: Audio packet count: 67300[0m
+[0;32mI (1671246) RC_CT: AVRC event notification: 5[0m
+[0;32mI (1671246) BT_AV: Play position changed: 151835-ms[0m
+[0;32mI (1672346) BT_AV: Audio packet count: 67400[0m
+[0;32mI (1674666) BT_AV: Audio packet count: 67500[0m
+[0;32mI (1677006) BT_AV: Audio packet count: 67600[0m
+[0;32mI (1679316) BT_AV: Audio packet count: 67700[0m
+[0;32mI (1681366) RC_CT: AVRC event notification: 5[0m
+[0;32mI (1681366) BT_AV: Play position changed: 161953-ms[0m
+[0;32mI (1681636) BT_AV: Audio packet count: 67800[0m
+[0;32mI (1683956) BT_AV: Audio packet count: 67900[0m
+[0;32mI (1686286) BT_AV: Audio packet count: 68000[0m
+[0;32mI (1688606) BT_AV: Audio packet count: 68100[0m
+[0;32mI (1690926) BT_AV: Audio packet count: 68200[0m
+[0;32mI (1691486) RC_CT: AVRC event notification: 5[0m
+[0;32mI (1691486) BT_AV: Play position changed: 172076-ms[0m
+[0;32mI (1693236) BT_AV: Audio packet count: 68300[0m
+[0;32mI (1695566) BT_AV: Audio packet count: 68400[0m
+[0;32mI (1697896) BT_AV: Audio packet count: 68500[0m
+[0;32mI (1700206) BT_AV: Audio packet count: 68600[0m
+[0;32mI (1701606) RC_CT: AVRC event notification: 5[0m
+[0;32mI (1701606) BT_AV: Play position changed: 182197-ms[0m
+[0;32mI (1702546) BT_AV: Audio packet count: 68700[0m
+[0;32mI (1704866) BT_AV: Audio packet count: 68800[0m
+[0;32mI (1707186) BT_AV: Audio packet count: 68900[0m
+[0;32mI (1709496) BT_AV: Audio packet count: 69000[0m
+[0;32mI (1711736) RC_CT: AVRC event notification: 5[0m
+[0;32mI (1711736) BT_AV: Play position changed: 192311-ms[0m
+[0;32mI (1711836) BT_AV: Audio packet count: 69100[0m
+[0;32mI (1714146) BT_AV: Audio packet count: 69200[0m
+[0;32mI (1716466) BT_AV: Audio packet count: 69300[0m
+[0;32mI (1718786) BT_AV: Audio packet count: 69400[0m
+[0;32mI (1721116) BT_AV: Audio packet count: 69500[0m
+[0;32mI (1721856) RC_CT: AVRC event notification: 5[0m
+[0;32mI (1721856) BT_AV: Play position changed: 202450-ms[0m
+[0;32mI (1723436) BT_AV: Audio packet count: 69600[0m
+[0;32mI (1725746) BT_AV: Audio packet count: 69700[0m
+[0;32mI (1728096) BT_AV: Audio packet count: 69800[0m
+[0;32mI (1730396) BT_AV: Audio packet count: 69900[0m
+[0;32mI (1731976) RC_CT: AVRC event notification: 5[0m
+[0;32mI (1731976) BT_AV: Play position changed: 212571-ms[0m
+[0;32mI (1732736) BT_AV: Audio packet count: 70000[0m
+[0;32mI (1735046) BT_AV: Audio packet count: 70100[0m
+[0;32mI (1737356) BT_AV: Audio packet count: 70200[0m
+[0;32mI (1739686) BT_AV: Audio packet count: 70300[0m
+[0;32mI (1742006) BT_AV: Audio packet count: 70400[0m
+[0;32mI (1742106) RC_CT: AVRC event notification: 5[0m
+[0;32mI (1742106) BT_AV: Play position changed: 222686-ms[0m
+[0;32mI (1744326) BT_AV: Audio packet count: 70500[0m
+[0;32mI (1746656) BT_AV: Audio packet count: 70600[0m
+[0;32mI (1748966) BT_AV: Audio packet count: 70700[0m
+[0;32mI (1751316) BT_AV: Audio packet count: 70800[0m
+[0;32mI (1752226) RC_CT: AVRC event notification: 5[0m
+[0;32mI (1752226) BT_AV: Play position changed: 232825-ms[0m
+[0;32mI (1753626) BT_AV: Audio packet count: 70900[0m
+[0;32mI (1755936) BT_AV: Audio packet count: 71000[0m
+[0;32mI (1758256) BT_AV: Audio packet count: 71100[0m
+[0;32mI (1760586) BT_AV: Audio packet count: 71200[0m
+[0;32mI (1762346) RC_CT: AVRC event notification: 5[0m
+[0;32mI (1762346) BT_AV: Play position changed: 242932-ms[0m
+[0;32mI (1762916) BT_AV: Audio packet count: 71300[0m
+[0;32mI (1765246) BT_AV: Audio packet count: 71400[0m
+[0;32mI (1767556) BT_AV: Audio packet count: 71500[0m
+[0;32mI (1769866) BT_AV: Audio packet count: 71600[0m
+[0;32mI (1772186) BT_AV: Audio packet count: 71700[0m
+[0;32mI (1772466) RC_CT: AVRC event notification: 5[0m
+[0;32mI (1772466) BT_AV: Play position changed: 253045-ms[0m
+[0;32mI (1774516) BT_AV: Audio packet count: 71800[0m
+[0;32mI (1776856) BT_AV: Audio packet count: 71900[0m
+[0;32mI (1779166) BT_AV: Audio packet count: 72000[0m
+[0;32mI (1781476) BT_AV: Audio packet count: 72100[0m
+[0;32mI (1782596) RC_CT: AVRC event notification: 5[0m
+[0;32mI (1782596) BT_AV: Play position changed: 263176-ms[0m
+[0;32mI (1783806) BT_AV: Audio packet count: 72200[0m
+[0;32mI (1784296) RC_CT: AVRC event notification: 5[0m
+[0;32mI (1784296) BT_AV: Play position changed: 180304-ms[0m
+[0;32mI (1784316) RC_CT: AVRC event notification: 2[0m
+[0;32mI (1784356) RC_CT: AVRC metadata rsp: attribute id 0x1, Beautiful Things[0m
+[0;32mI (1784356) RC_CT: AVRC metadata rsp: attribute id 0x2, Benson Boone[0m
+[0;32mI (1784356) RC_CT: AVRC metadata rsp: attribute id 0x4, Beautiful Things[0m
+[0;32mI (1786126) BT_AV: Audio packet count: 72300[0m
+[0;32mI (1788456) BT_AV: Audio packet count: 72400[0m
+[0;32mI (1790786) BT_AV: Audio packet count: 72500[0m
+[0;32mI (1793106) BT_AV: Audio packet count: 72600[0m
+[0;32mI (1794376) RC_CT: AVRC event notification: 5[0m
+[0;32mI (1794376) BT_AV: Play position changed: 10161-ms[0m
+[0;32mI (1794586) RC_CT: AVRC event notification: 5[0m
+[0;32mI (1794586) BT_AV: Play position changed: 9143-ms[0m
+[0;32mI (1795416) BT_AV: Audio packet count: 72700[0m
+[0;32mI (1797746) BT_AV: Audio packet count: 72800[0m
+[0;32mI (1800056) BT_AV: Audio packet count: 72900[0m
+[0;32mI (1802386) BT_AV: Audio packet count: 73000[0m
+[0;32mI (1804686) RC_CT: AVRC event notification: 5[0m
+[0;32mI (1804686) BT_AV: Play position changed: 19196-ms[0m
+[0;32mI (1804716) BT_AV: Audio packet count: 73100[0m
+[0;32mI (1807026) BT_AV: Audio packet count: 73200[0m
+[0;32mI (1809366) BT_AV: Audio packet count: 73300[0m
+[0;32mI (1811676) BT_AV: Audio packet count: 73400[0m
+[0;32mI (1814006) BT_AV: Audio packet count: 73500[0m
+[0;32mI (1814806) RC_CT: AVRC event notification: 5[0m
+[0;32mI (1814806) BT_AV: Play position changed: 29310-ms[0m
+[0;32mI (1816306) BT_AV: Audio packet count: 73600[0m
+[0;32mI (1818636) BT_AV: Audio packet count: 73700[0m
+[0;32mI (1820956) BT_AV: Audio packet count: 73800[0m
+[0;32mI (1823286) BT_AV: Audio packet count: 73900[0m
+[0;32mI (1824946) RC_CT: AVRC event notification: 5[0m
+[0;32mI (1824946) BT_AV: Play position changed: 39445-ms[0m
+[0;32mI (1825596) BT_AV: Audio packet count: 74000[0m
+[0;32mI (1827916) BT_AV: Audio packet count: 74100[0m
+[0;32mI (1830246) BT_AV: Audio packet count: 74200[0m
+[0;32mI (1832566) BT_AV: Audio packet count: 74300[0m
+[0;32mI (1834886) BT_AV: Audio packet count: 74400[0m
+[0;32mI (1835076) RC_CT: AVRC event notification: 5[0m
+[0;32mI (1835076) BT_AV: Play position changed: 49579-ms[0m
+[0;32mI (1837216) BT_AV: Audio packet count: 74500[0m
+[0;32mI (1839536) BT_AV: Audio packet count: 74600[0m
+[0;32mI (1841866) BT_AV: Audio packet count: 74700[0m
+[0;32mI (1844166) BT_AV: Audio packet count: 74800[0m
+[0;32mI (1845216) RC_CT: AVRC event notification: 5[0m
+[0;32mI (1845216) BT_AV: Play position changed: 59718-ms[0m
+[0;32mI (1846496) BT_AV: Audio packet count: 74900[0m
+[0;32mI (1848816) BT_AV: Audio packet count: 75000[0m
+[0;32mI (1851156) BT_AV: Audio packet count: 75100[0m
+[0;32mI (1853456) BT_AV: Audio packet count: 75200[0m
+[0;32mI (1855326) RC_CT: AVRC event notification: 5[0m
+[0;32mI (1855326) BT_AV: Play position changed: 69840-ms[0m
+[0;32mI (1855786) BT_AV: Audio packet count: 75300[0m
+[0;32mI (1858116) BT_AV: Audio packet count: 75400[0m
+[0;32mI (1860426) BT_AV: Audio packet count: 75500[0m
+[0;32mI (1862756) BT_AV: Audio packet count: 75600[0m
+[0;32mI (1865086) BT_AV: Audio packet count: 75700[0m
+[0;32mI (1865456) RC_CT: AVRC event notification: 5[0m
+[0;32mI (1865456) BT_AV: Play position changed: 79959-ms[0m
+[0;32mI (1867396) BT_AV: Audio packet count: 75800[0m
+[0;32mI (1869716) BT_AV: Audio packet count: 75900[0m
+[0;32mI (1872046) BT_AV: Audio packet count: 76000[0m
+[0;32mI (1874366) BT_AV: Audio packet count: 76100[0m
+[0;32mI (1875586) RC_CT: AVRC event notification: 5[0m
+[0;32mI (1875586) BT_AV: Play position changed: 90090-ms[0m
+[0;32mI (1876686) BT_AV: Audio packet count: 76200[0m
+[0;32mI (1878996) BT_AV: Audio packet count: 76300[0m
+[0;32mI (1881326) BT_AV: Audio packet count: 76400[0m
+[0;32mI (1883646) BT_AV: Audio packet count: 76500[0m
+[0;32mI (1885716) RC_CT: AVRC event notification: 5[0m
+[0;32mI (1885716) BT_AV: Play position changed: 100215-ms[0m
+[0;32mI (1885986) BT_AV: Audio packet count: 76600[0m
+[0;32mI (1888296) BT_AV: Audio packet count: 76700[0m
+[0;32mI (1890616) BT_AV: Audio packet count: 76800[0m
+[0;32mI (1892936) BT_AV: Audio packet count: 76900[0m
+[0;32mI (1895256) BT_AV: Audio packet count: 77000[0m
+[0;32mI (1895836) RC_CT: AVRC event notification: 5[0m
+[0;32mI (1895836) BT_AV: Play position changed: 110348-ms[0m
+[0;32mI (1897586) BT_AV: Audio packet count: 77100[0m
+[0;32mI (1899906) BT_AV: Audio packet count: 77200[0m
+[0;32mI (1902216) BT_AV: Audio packet count: 77300[0m
+[0;32mI (1904546) BT_AV: Audio packet count: 77400[0m
+[0;32mI (1905966) RC_CT: AVRC event notification: 5[0m
+[0;32mI (1905966) BT_AV: Play position changed: 120463-ms[0m
+[0;32mI (1906866) BT_AV: Audio packet count: 77500[0m
+[0;32mI (1909186) BT_AV: Audio packet count: 77600[0m
+[0;32mI (1911516) BT_AV: Audio packet count: 77700[0m
+[0;32mI (1913846) BT_AV: Audio packet count: 77800[0m
+[0;32mI (1916116) RC_CT: AVRC event notification: 5[0m
+[0;32mI (1916116) BT_AV: Play position changed: 130626-ms[0m
+[0;32mI (1916146) BT_AV: Audio packet count: 77900[0m
+[0;32mI (1918476) BT_AV: Audio packet count: 78000[0m
+[0;32mI (1920796) BT_AV: Audio packet count: 78100[0m
+[0;32mI (1923116) BT_AV: Audio packet count: 78200[0m
+[0;32mI (1925446) BT_AV: Audio packet count: 78300[0m
+[0;32mI (1926236) RC_CT: AVRC event notification: 5[0m
+[0;32mI (1926236) BT_AV: Play position changed: 140742-ms[0m
+[0;32mI (1927776) BT_AV: Audio packet count: 78400[0m
+[0;32mI (1930096) BT_AV: Audio packet count: 78500[0m
+[0;32mI (1932406) BT_AV: Audio packet count: 78600[0m
+[0;32mI (1934736) BT_AV: Audio packet count: 78700[0m
+[0;32mI (1936356) RC_CT: AVRC event notification: 5[0m
+[0;32mI (1936356) BT_AV: Play position changed: 150867-ms[0m
+[0;32mI (1937056) BT_AV: Audio packet count: 78800[0m
+[0;32mI (1939376) BT_AV: Audio packet count: 78900[0m
+[0;32mI (1941696) BT_AV: Audio packet count: 79000[0m
+[0;32mI (1944016) BT_AV: Audio packet count: 79100[0m
+[0;32mI (1946356) BT_AV: Audio packet count: 79200[0m
+[0;32mI (1946466) RC_CT: AVRC event notification: 5[0m
+[0;32mI (1946466) BT_AV: Play position changed: 160982-ms[0m
+[0;32mI (1948666) BT_AV: Audio packet count: 79300[0m
+[0;32mI (1950986) BT_AV: Audio packet count: 79400[0m
+[0;32mI (1953306) BT_AV: Audio packet count: 79500[0m
+[0;32mI (1955646) BT_AV: Audio packet count: 79600[0m
+[0;32mI (1956606) RC_CT: AVRC event notification: 5[0m
+[0;32mI (1956606) BT_AV: Play position changed: 171097-ms[0m
+[0;32mI (1957966) BT_AV: Audio packet count: 79700[0m
+[0;32mI (1960266) BT_AV: Audio packet count: 79800[0m
+[0;32mI (1962596) BT_AV: Audio packet count: 79900[0m
+[0;32mI (1964936) BT_AV: Audio packet count: 80000[0m
+[0;32mI (1965086) RC_CT: AVRC event notification: 5[0m
+[0;32mI (1965086) BT_AV: Play position changed: 0-ms[0m
+[0;32mI (1965086) RC_CT: AVRC event notification: 2[0m
+[0;32mI (1965146) RC_CT: AVRC metadata rsp: attribute id 0x1, Heartland Bank[0m
+[0;32mI (1965146) RC_CT: AVRC metadata rsp: attribute id 0x2, Advertisement[0m
+[0;32mI (1965536) RC_CT: AVRC event notification: 2[0m
+[0;32mI (1965596) RC_CT: AVRC metadata rsp: attribute id 0x1, Heartland Bank[0m
+[0;32mI (1965596) RC_CT: AVRC metadata rsp: attribute id 0x2, Advertisement[0m
+[0;32mI (1967256) BT_AV: Audio packet count: 80100[0m
+[0;32mI (1969566) BT_AV: Audio packet count: 80200[0m
+[0;32mI (1971896) BT_AV: Audio packet count: 80300[0m
+[0;32mI (1974206) BT_AV: Audio packet count: 80400[0m
+[0;32mI (1975186) RC_CT: AVRC event notification: 5[0m
+[0;32mI (1975186) BT_AV: Play position changed: 10079-ms[0m
+[0;32mI (1976536) BT_AV: Audio packet count: 80500[0m
+[0;32mI (1978856) BT_AV: Audio packet count: 80600[0m
+[0;32mI (1981186) BT_AV: Audio packet count: 80700[0m
+[0;32mI (1983486) BT_AV: Audio packet count: 80800[0m
+[0;32mI (1985296) RC_CT: AVRC event notification: 5[0m
+[0;32mI (1985296) BT_AV: Play position changed: 20201-ms[0m
+[0;32mI (1985836) BT_AV: Audio packet count: 80900[0m
+[0;32mI (1988136) BT_AV: Audio packet count: 81000[0m
+[0;32mI (1990456) BT_AV: Audio packet count: 81100[0m
+[0;32mI (1992786) BT_AV: Audio packet count: 81200[0m
+[0;32mI (1995096) BT_AV: Audio packet count: 81300[0m
+[0;32mI (1995396) RC_CT: AVRC event notification: 5[0m
+[0;32mI (1995396) BT_AV: Play position changed: 30315-ms[0m
+[0;32mI (1996386) RC_CT: AVRC event notification: 2[0m
+[0;32mI (1996456) RC_CT: AVRC metadata rsp: attribute id 0x1, The Home Depot[0m
+[0;32mI (1996456) RC_CT: AVRC metadata rsp: attribute id 0x2, Advertisement[0m
+[0;32mI (1997446) BT_AV: Audio packet count: 81400[0m
+[0;32mI (1999756) BT_AV: Audio packet count: 81500[0m
+[0;32mI (2001776) BT_APP_CORE: ringbuffer underflowed! mode changed: RINGBUFFER_MODE_PREFETCHING[0m
+[0;32mI (2001856) BT_APP_CORE: ringbuffer data increased! mode changed: RINGBUFFER_MODE_PROCESSING[0m
+[0;32mI (2002096) BT_AV: Audio packet count: 81600[0m
+[0;33mW (2002096) BT_APP_CORE: ringbuffer overflowed, ready to decrease data! mode changed: RINGBUFFER_MODE_DROPPING[0m
+[0;33mW (2002116) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (2002146) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;33mW (2002176) BT_APP_CORE: ringbuffer is full, drop this packet![0m
+[0;32mI (2002176) BT_APP_CORE: ringbuffer data decreased! mode changed: RINGBUFFER_MODE_PROCESSING[0m
+[0;32mI (2004396) BT_AV: Audio packet count: 81
