@@ -79,7 +79,7 @@ static esp_a2d_audio_state_t s_audio_state = ESP_A2D_AUDIO_STATE_STOPPED;
                                              /* audio stream datapath state */
 static const char *s_a2d_conn_state_str[] = {"Disconnected", "Connecting", "Connected", "Disconnecting"};
                                              /* connection state in string */
-static const char *s_a2d_audio_state_str[] = {"Suspended", "Stopped", "Started"};
+static const char *s_a2d_audio_state_str[] = {"Suspended", "Started"};
                                              /* audio stream datapath state in string */
 static esp_avrc_rn_evt_cap_mask_t s_avrc_peer_rn_cap;
                                              /* AVRC target notification capability bit mask */
@@ -469,7 +469,7 @@ static void bt_av_hdl_avrc_tg_evt(uint16_t event, void *p_param)
                  rc->conn_stat.connected, bda[0], bda[1], bda[2], bda[3], bda[4], bda[5]);
         if (rc->conn_stat.connected) {
             /* create task to simulate volume change */
-            //xTaskCreate(volume_change_simulation, "vcsTask", 2048, NULL, 5, &s_vcs_task_hdl);
+            xTaskCreate(volume_change_simulation, "vcsTask", 2048, NULL, 5, &s_vcs_task_hdl);
         } else {
             vTaskDelete(s_vcs_task_hdl);
             ESP_LOGI(BT_RC_TG_TAG, "Stop volume change simulation");
