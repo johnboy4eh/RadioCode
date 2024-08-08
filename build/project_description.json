@@ -1,7 +1,7 @@
 {
     "version":            "1.1",
     "project_name":       "RadioCode",
-    "project_version":    "1a0dd87-dirty",
+    "project_version":    "9094f63-dirty",
     "project_path":       "D:/EclipseWorkspace/RadioCode",
     "idf_path":           "C:/Espressif/frameworks/esp-idf-v5.3",
     "build_dir":          "D:/EclipseWorkspace/RadioCode/build",
